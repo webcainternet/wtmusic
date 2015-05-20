@@ -111,6 +111,56 @@
                   <?php } ?>
                 </div>
               </div>
+
+              <!-- QRCODE INFO -->
+              <div class="form-group">
+                <label class="col-sm-2 control-label" for="input-subtract">Deve gerar</label>
+                <div class="col-sm-10">
+                  <select name="subtract" id="input-subtract" class="form-control">
+                    <option value="0">Nenhum</option>
+                    <option value="1" selected="selected">Emitir QR Code</option>
+                    <option value="2">Emitir código de barras</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="col-sm-2 control-label" for="input-sku"><span data-toggle="tooltip" title="<?php echo $help_sku; ?>">Fórmula de emissão</span></label>
+                <div class="col-sm-10">
+                  <input type="text" name="sku" value="#nome" placeholder="#nome" id="input-sku" class="form-control" />
+                  <span>Variáveis disponíveis: #dd #mes #ano #pedido #valor #nome</span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="col-sm-2 control-label" for="input-sku"><span data-toggle="tooltip" title="<?php echo $help_sku; ?>">Linha 1 (Negrito)</span></label>
+                <div class="col-sm-10">
+                  <input type="text" name="sku" value="1o LOTE MEIA" placeholder="#nome" id="input-sku" class="form-control" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="col-sm-2 control-label" for="input-sku"><span data-toggle="tooltip" title="<?php echo $help_sku; ?>">Linha 2 (Negrito)</span></label>
+                <div class="col-sm-10">
+                  <input type="text" name="sku" value="SHOW NOME DO EVENTO E ALGO 2015." placeholder="#nome" id="input-sku" class="form-control" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="col-sm-2 control-label" for="input-sku"><span data-toggle="tooltip" title="<?php echo $help_sku; ?>">Linha 3</span></label>
+                <div class="col-sm-10">
+                  <input type="text" name="sku" value="Espaço Anchieta" placeholder="#nome" id="input-sku" class="form-control" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="col-sm-2 control-label" for="input-sku"><span data-toggle="tooltip" title="<?php echo $help_sku; ?>">Linha 4</span></label>
+                <div class="col-sm-10">
+                  <input type="text" name="sku" value="Av. Anchieta, n1002, Brás, SÃO PAULO - SP" placeholder="#nome" id="input-sku" class="form-control" />
+                </div>
+              </div>
+              <!-- END QRCODE INFO -->              
+
               <div class="form-group">
                 <label class="col-sm-2 control-label" for="input-sku"><span data-toggle="tooltip" title="<?php echo $help_sku; ?>"><?php echo $entry_sku; ?></span></label>
                 <div class="col-sm-10">

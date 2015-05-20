@@ -5,7 +5,7 @@
 	</div>
 
 	<div style="display: inline-block; width: 49%">
-		[Imagens formas de envio] | [Imagens formas de pagamento]
+		[Certificados]
 	</div>
   </div>
 </footer>
@@ -63,7 +63,12 @@
 	<div class="copyright">
 		<div class="container">
 			<?php echo $powered; ?><!-- [[%FOOTER_LINK]] -->
+		
+			<div style="float: right;">
+				<img src="/image/footer-bandeiras.png" style="width: 250px;" width="250">
+			</div>
 		</div> 
+		
 	</div>
 </footer>
 <script src="catalog/view/theme/theme504/js/livesearch.js" type="text/javascript"></script>
