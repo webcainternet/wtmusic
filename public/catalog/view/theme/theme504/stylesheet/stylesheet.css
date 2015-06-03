@@ -1144,7 +1144,7 @@ td .price, .price b {
 }
 /************** BOX ***********************/
 .box {
-	margin-bottom:20px;
+	margin-bottom:0px;
 }
 aside .box .product-layout:first-child {
 	margin-top:0;
