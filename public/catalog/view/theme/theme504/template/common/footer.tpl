@@ -1,11 +1,11 @@
 <footer  style="background-color: #FFFFFF; padding-bottom: 50px;">
   <div class="container" style="border-top: 1px solid #f1f1f1; padding-top: 50px;">
-  	<div style="display: inline-block; width: 50%">
-  		<div class="fb-like" data-href="https://facebook.com/lojavirtual.digital" data-width="570" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+  	<div style="width: 895px; float: left;">
+  		<div class="fb-like" data-href="https://facebook.com/lojavirtual.digital" data-width="880" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
 	</div>
 
-	<div style="display: inline-block; width: 49%">
-		[Certificados]
+	<div style="width: 100px; float: right; margin-top: -10px;">
+		<img src="/image/comodo_secure_100x85_transp.png">
 	</div>
   </div>
 </footer>

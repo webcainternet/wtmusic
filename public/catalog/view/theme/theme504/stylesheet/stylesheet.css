@@ -1672,6 +1672,7 @@ aside .box.facebook {
 /***************HOME PAGE**********************/
 .header_modules {
 	margin-bottom:49px;
+	height: 430px;
 }
 .header_modules .owl-carousel {
 	border:0;
