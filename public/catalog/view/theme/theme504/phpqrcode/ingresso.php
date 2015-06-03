@@ -143,7 +143,6 @@ body {
 	<div style="font-size: 10px; text-align: justify;">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou um. É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver de que por examinando sua diagramação. </div>
 </div>
 
-
 </div>
 </body>
 </html>
