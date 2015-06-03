@@ -114,13 +114,26 @@
 
               <!-- QRCODE INFO -->
               <div class="form-group">
-                <label class="col-sm-2 control-label" for="input-subtract">Deve gerar</label>
+                <label class="col-sm-2 control-label" for="input-subtract">QRCode/Boleto</label>
                 <div class="col-sm-10">
-                  <select name="subtract" id="input-subtract" class="form-control">
-                    <option value="0">Nenhum</option>
-                    <option value="1" selected="selected">Emitir QR Code</option>
-                    <option value="2">Emitir código de barras</option>
-                  </select>
+                  <label class="radio-inline">
+                    <?php if ($shipping) { ?>
+                    <input type="radio" name="shipping" value="1" checked="checked" />
+                    <?php echo $text_yes; ?>
+                    <?php } else { ?>
+                    <input type="radio" name="shipping" value="1" />
+                    <?php echo $text_yes; ?>
+                    <?php } ?>
+                  </label>
+                  <label class="radio-inline">
+                    <?php if (!$shipping) { ?>
+                    <input type="radio" name="shipping" value="0" checked="checked" />
+                    <?php echo $text_no; ?>
+                    <?php } else { ?>
+                    <input type="radio" name="shipping" value="0" />
+                    <?php echo $text_no; ?>
+                    <?php } ?>
+                  </label>
                 </div>
               </div>
 
