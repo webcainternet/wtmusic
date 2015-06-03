@@ -37,6 +37,7 @@ body {
 .col5 {
 	float: right;
   	width: 200px;
+  	margin-right: 10px;
 }
 
 .cupomdeacesso {

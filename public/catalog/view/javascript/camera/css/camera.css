@@ -180,8 +180,9 @@
 	line-height:27px;
 	font-weight:500;
 	background-color:#19405b;
-	max-width:713px;
-	padding:2.5% 3%
+	padding:2.5% 3%;
+	opacity: 0.9 !important;
+	filter: alpha(opacity=90) !important;
 }
 .camera_caption>div {
 	max-width:1170px;

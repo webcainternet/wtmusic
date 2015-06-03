@@ -89,7 +89,6 @@
 			<?php if ($logged) { ?>
 			<li><a href="<?php echo $order; ?>"><?php echo $text_order; ?></a></li>
 			<li><a href="<?php echo $transaction; ?>"><?php echo $text_transaction; ?></a></li>
-			<li><a href="<?php echo $download; ?>"><?php echo $text_download; ?></a></li>
 			<li><a href="<?php echo $logout; ?>"><?php echo $text_logout; ?></a></li>
 			<?php } else { ?>
 			<li><a href="<?php echo $register; ?>"><i class="fa fa-user"></i> <?php echo $text_register; ?></a></li>
@@ -155,7 +154,6 @@
 						<li><a href="<?php echo $account; ?>"><?php echo $text_account; ?></a></li>
 						<li><a href="<?php echo $order; ?>"><?php echo $text_order; ?></a></li>
 						<li><a href="<?php echo $transaction; ?>"><?php echo $text_transaction; ?></a></li>
-						<li><a href="<?php echo $download; ?>"><?php echo $text_download; ?></a></li>
 						<li><a href="<?php echo $logout; ?>"><?php echo $text_logout; ?></a></li>
 						<?php } else { ?>
 						<li><a href="<?php echo $register; ?>"><?php echo $text_register; ?></a></li>
@@ -202,6 +200,16 @@
 	<div class="container">
 		<div class="menu-shadow">
 			<?php if ($categories) {  echo $categories; } ?>
+
+			<ul class="menu" style="float: right;">
+			<li>
+				<a href="/index.php?route=information/information&information_id=4">Sobre nós</a>
+			</li>
+			<li>
+				<a href="/index.php?route=information/contact">Contato</a>
+			</li>
+
+			</ul>
 			<div class="clear"></div>
 		</div>
 	</div>

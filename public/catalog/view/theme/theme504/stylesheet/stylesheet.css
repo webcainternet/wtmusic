@@ -2263,7 +2263,7 @@ box-subcat li .name a:hover {
 	height:250px
 }
 .camera_caption {
-	background-image:url(../image/bg-caption.png);
+/*	background-image:url(../image/bg-caption.png); */
 	background-position:right top;
 	background-repeat:no-repeat;
 	background-size: auto 100%
