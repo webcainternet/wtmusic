@@ -4,8 +4,8 @@
   		<div class="fb-like" data-href="https://facebook.com/lojavirtual.digital" data-width="880" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
 	</div>
 
-	<div style="width: 100px; float: right; margin-top: -10px;">
-		<img src="/image/comodo_secure_100x85_transp.png">
+	<div style="width: 280px; float: right; margin-top: -10px;">
+		<img src="/catalog/view/theme/theme504/image/certificados.jpg" style="margin-top: -45px;">
 	</div>
   </div>
 </footer>
