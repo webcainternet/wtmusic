@@ -1,8 +1,4 @@
 <?php
-echo "HTTP 500";
-exit;
-?>
-<?php
 /*
  * PHP QR Code encoder
  *
