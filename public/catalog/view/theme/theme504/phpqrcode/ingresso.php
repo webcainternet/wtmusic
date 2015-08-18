@@ -147,7 +147,7 @@ body {
 </div>
 
 <div class="col5">
-	<div style="font-size: 14px; color: #ed9832; font-weight: bold;">Atenção:</div>
+	<div style="font-size: 14px; color: #192C48; font-weight: bold;">Atenção:</div>
 	<div style="font-size: 10px; text-align: justify;">
 	<br>
 Entrada deve ser acompanhada através <br>
