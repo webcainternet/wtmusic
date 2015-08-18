@@ -9,11 +9,14 @@ body {
 }
 
 .cupom {
-	border: solid 1px #b5c5e4;
-	margin: 10px;
-	padding: 10px;
-	float: left;
-	width: 800px;
+	border: solid 1px #c1c1c1;
+    margin: 10px;
+    padding: 10px;
+    float: left;
+    width: 800px;
+    background-image: url('/catalog/view/theme/theme504/image/watermark4.png');
+    background-repeat: repeat-y;
+    background-position: 775px;
 }
 
 .col1 {
@@ -24,6 +27,9 @@ body {
 	float: right;
 	width: 339px;
 	padding-top: 25px;
+	text-align: right;
+    margin-right: 45px;
+    text-transform: uppercase;
 }
 .col3 {
 	float: left;
@@ -32,25 +38,27 @@ body {
 }
 .col4 {
 	float: left;
-  	width: 400px;
+  	width: 375px;
 }
 .col5 {
 	float: right;
   	width: 200px;
-  	margin-right: 10px;
+  	margin-right: 45px;
 }
 
 .cupomdeacesso {
 	font-size: 28px;
 	color: #192C48;
+	border-right: solid 10px #192c48;
+    padding-right: 10px;
 }
 
 .areacontent {
 	float: left;
 	width: 100%;
-	margin-top:30px;
-	padding-top: 30px;
-	border-top: solid 1px #19405b;
+	margin-top:15px;
+	padding-top: 15px;
+	border-top: solid 1px #c1c1c1;
 }
 .parag {
 	margin-top: 10px;
@@ -140,10 +148,20 @@ body {
 
 <div class="col5">
 	<div style="font-size: 14px; color: #ed9832; font-weight: bold;">Atenção:</div>
-	<div style="font-size: 10px; text-align: justify;">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou um. É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver de que por examinando sua diagramação. </div>
+	<div style="font-size: 10px; text-align: justify;">
+	<br>
+Entrada deve ser acompanhada através <br>
+de um documento com foto<br><br>
+Teatro Municipal de Niterói<br>
+Rua Quinze de Novembro, 35 - Centro<br>
+Niterói - RJ</div>
 </div>
 
 
+</div>
+
+<div class="areacontent" style="text-align: center;">
+<img src="http://wtmusic.com.br/catalog/view/theme/theme504/barcodegen/html/image.php?filetype=PNG&dpi=300&scale=1&rotation=0&font_family=Arial.ttf&font_size=8&text=<?php echo $infotext; ?>&thickness=90&checksum=&code=BCGcode39">
 </div>
 </body>
 </html>
