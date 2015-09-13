@@ -145,12 +145,3 @@ div.ps-toolbar-play div.ps-toolbar-content
 	background-position: -88px 0;
 }
 
-/* Hi-res retina display */
-@media only screen and (-webkit-min-device-pixel-ratio: 2)
-{
-	div.ps-toolbar div div.ps-toolbar-content
-	{
-		-webkit-background-size: 176px 88px;
-		background-image: url(../image/photoswipe-icons@2x.png);
-	}
-}

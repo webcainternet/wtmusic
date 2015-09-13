@@ -4,7 +4,8 @@ body {
 	color: #777777;
 	font-size: 13px;
 	line-height: 20px;
-	background:url(../image/bg.jpg) no-repeat center top #f1f1f1;
+/*	background:url(../image/bg.jpg) no-repeat center top #f1f1f1; */
+background-color: #555;
 }
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Ubuntu', sans-serif;
@@ -509,41 +510,6 @@ input#input-coupon {
 	color: #ffffff;
 	background-color: #229ac8;
 }
-@media (min-width: 768px) {
-	#menu .dropdown:hover .dropdown-menu {
-		display: block;
-	}
-}
-@media (max-width: 767px) {
-	#menu {
-		border-radius: 4px;
-	}
-	#menu div.dropdown-inner > ul.list-unstyled {
-		display: block;
-	}
-	#menu div.dropdown-menu {
-		margin-left: 0 !important;
-		padding-bottom: 10px;
-		background-color: rgba(0, 0, 0, 0.1);
-	}
-	#menu .dropdown-inner {
-		display: block;
-	}
-	#menu .dropdown-inner a {
-		width: 100%;
-		color: #fff;
-	}
-	#menu .dropdown-menu a:hover,
-	#menu .dropdown-menu ul li a:hover {
-		background: rgba(0, 0, 0, 0.1);
-	}
-	#menu .see-all {
-		margin-top: 0;
-		border: none;
-		border-radius: 0;
-		color: #fff;
-	}
-}
 /* content */
 #content {
 	min-height: 326px;
@@ -922,11 +888,6 @@ aside .product-thumb {
 .product-grid .product-thumb .image {
 	float: none;
 }
-@media (min-width: 767px) {
-.product-list .product-thumb .image {
-	float: left;
-}
-}
 .product-thumb h4 {
 	font-weight: bold;
 }
@@ -936,23 +897,6 @@ aside .product-thumb {
 .product-list .product-thumb .caption {
 	margin-left: 230px;
 }
-@media (max-width: 1200px) {
-.product-grid .product-thumb .caption {
-
-	padding: 0 10px;
-}
-}
-@media (max-width: 767px) {
-.product-list .product-thumb .caption {
-	min-height: 0;
-	margin-left: 0;
-	padding: 0 10px;
-}
-.product-grid .product-thumb .caption {
-	min-height: 0;
-}
-}
-
 .product-list .product-thumb .rating {
 	float:none;
 }
@@ -1035,11 +979,6 @@ td .price, .price b {
 	border-left: 1px solid #ddd;
 }
 
-@media (max-width: 768px) {
-.product-list .product-thumb .button-group {
-	border-left: none;
-}
-}
 .product-thumb .button-group button {
 	width: 60%;
 	border: none;
@@ -1062,17 +1001,6 @@ td .price, .price b {
 	text-decoration: none;
 	cursor: pointer;
 }
-@media (max-width: 1200px) {
-.product-thumb .button-group button, .product-thumb .button-group button + button {
-	width: 33.33%;
-}
-}
-@media (max-width: 767px) {
-.product-thumb .button-group button, .product-thumb .button-group button + button {
-	width: 33.33%;
-}
-}
-
 
 
 
@@ -2721,22 +2649,6 @@ img.alignleft {
 .zoomWindow {
 	z-index:40 !important
 }
-/* fixed colum left + content + right*/
-@media (min-width: 768px) {
-#column-left  .product-layout .col-md-3{
-	width: 100%;
-}
-#column-left + #content .product-layout .col-md-3 {
-	width: 50%;
-}
-#column-left + #content + #column-right .product-layout .col-md-3{
-	width: 100%;
-}
-#content + #column-right .product-layout .col-md-3{
-	width: 100%;
-}
-}
-/*======================= bootstrap reset =======================*/
 /* bootstrap reset */
 .container>.alert,
 .breadcrumb+.alert {
