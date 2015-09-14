@@ -119,7 +119,7 @@ WHERE oo.name = 'Nome no ingresso' AND oo2.name = 'CPF no ingresso' AND op.order
             $item_cpf = $obj->cpf;
 ?>
 
-
+<p>
 
     <div id="ingresso-<?php echo $item_order_product_id; ?>" style="width: 100%;">
         <div class="cupom">
@@ -208,8 +208,9 @@ WHERE oo.name = 'Nome no ingresso' AND oo2.name = 'CPF no ingresso' AND op.order
         <img src="http://wtmusic.com.br/catalog/view/theme/theme504/barcodegen/html/image.php?filetype=PNG&dpi=300&scale=1&rotation=0&font_family=Arial.ttf&font_size=8&text=<?php echo $infotext; ?>&thickness=90&checksum=&code=BCGcode39">
         </div>
     </div>
+</p>
 
-    <hr>
+<hr>
 
 <?php
             } 
