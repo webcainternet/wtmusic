@@ -8,6 +8,12 @@
 
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
 <style type="text/css">
+@media print {
+    table { 
+        page-break-after: always; 
+    }
+}
+
 body {
 	font-family: 'Open Sans', sans-serif;
 }
@@ -119,7 +125,7 @@ WHERE oo.name = 'Nome no ingresso' AND oo2.name = 'CPF no ingresso' AND op.order
             $item_cpf = $obj->cpf;
 ?>
 
-<p>
+<table><tr><td>
 
     <div id="ingresso-<?php echo $item_order_product_id; ?>" style="width: 100%;">
         <div class="cupom">
@@ -208,7 +214,8 @@ WHERE oo.name = 'Nome no ingresso' AND oo2.name = 'CPF no ingresso' AND op.order
         <img src="http://wtmusic.com.br/catalog/view/theme/theme504/barcodegen/html/image.php?filetype=PNG&dpi=300&scale=1&rotation=0&font_family=Arial.ttf&font_size=8&text=<?php echo $infotext; ?>&thickness=90&checksum=&code=BCGcode39">
         </div>
     </div>
-</p>
+
+</td></tr></table>
 
 <?php
             } 
