@@ -307,8 +307,7 @@
 					</div>
 
 					<ul class="product-buttons">
-						<li><button class="btn btn-icon" onclick="wishlist.add('<?php echo $product_id; ?>');"><i class="fa fa-heart"></i> <span class="hidden-xs hidden-sm"><?php echo $button_wishlist; ?></span></button></li>
-						<li><button type="button" class="btn btn-icon" onclick="compare.add('<?php echo $product_id; ?>');"><i class="fa fa-exchange"></i> <span class="hidden-xs hidden-sm"><?php echo $button_compare; ?></span></button></li>
+						
 					</ul>					
 
 					<?php if ($tags) { ?>
@@ -482,8 +481,6 @@
 						</div>
 						<div>
 							<button class="btn btn-add" type="button" onclick="cart.add('<?php echo $product['product_id']; ?>');" data-toggle="tooltip" title="<?php echo $button_cart; ?>"><span class="hidden-xs hidden-sm hidden-md"><?php echo $button_cart; ?></span> <i class="fa fa-shopping-cart"></i></button>
-							<button class="btn btn-icon" type="button" data-toggle="tooltip" title="<?php echo $button_wishlist; ?>" onclick="wishlist.add('<?php echo $product['product_id']; ?>');"><i class="fa fa-heart"></i></button>
-							<button class="btn btn-icon" type="button" data-toggle="tooltip" title="<?php echo $button_compare; ?>" onclick="compare.add('<?php echo $product['product_id']; ?>');"><i class="fa fa-exchange"></i></button>
 						</div>
 							<div class="clear"></div>
 					</div>

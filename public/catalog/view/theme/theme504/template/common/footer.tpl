@@ -1,15 +1,3 @@
-<footer  style="background-color: #FFFFFF; padding-bottom: 50px;">
-  <div class="container" style="border-top: 1px solid #f1f1f1; padding-top: 50px;">
-  	<div style="width: 895px; float: left;">
-  		<div class="fb-like" data-href="https://facebook.com/lojavirtual.digital" data-width="880" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
-	</div>
-
-	<div style="width: 280px; float: right; margin-top: -10px;">
-		<img src="/catalog/view/theme/theme504/image/certificados.jpg" style="margin-top: -45px;">
-	</div>
-  </div>
-</footer>
-
 <footer>
   <div class="container">
 	<div class="row">
@@ -35,7 +23,7 @@
 				</ul>
 			</div>
 		</div>
-		<div class="col-sm-3">
+		<?php /* <div class="col-sm-3">
 			<div class="footer_box">
 				<h5><?php echo $text_extra; ?></h5>
 				<ul class="list-unstyled">
@@ -45,18 +33,29 @@
 				<li><a href="<?php echo $special; ?>"><?php echo $text_special; ?></a></li>
 				</ul>
 			</div>
-		</div>
+		</div> */ ?>
 		<div class="col-sm-3">
 			<div class="footer_box">
 				<h5><?php echo $text_account; ?></h5>
 				<ul class="list-unstyled">
 				<li><a href="<?php echo $account; ?>"><?php echo $text_account; ?></a></li>
 				<li><a href="<?php echo $order; ?>"><?php echo $text_order; ?></a></li>
-				<li><a href="<?php echo $wishlist; ?>"><?php echo $text_wishlist; ?></a></li>
 				<li><a href="<?php echo $newsletter; ?>"><?php echo $text_newsletter; ?></a></li>
 				</ul>
 			</div>
 		</div>
+
+		<div class="col-sm-3">
+			<div class="footer_box" style="height: 130px;">
+				<div class="fb-like"></div>
+				<div style="margin-top: 15px; right: 0px; bottom: 0px; position: absolute;">
+					<img src="/image/comodo-ssl.png" width="100" style="width: 100px; margin-right: 20px;">
+				</div>
+			</div>
+		</div>
+
+
+		
 	</div>
 	
   </div>

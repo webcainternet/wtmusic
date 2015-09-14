@@ -301,6 +301,7 @@ ul.soc-icon li i {
 	vertical-align:top;
 	display:block;
 	float:left;
+	color: #1D1F20;
 }
 #cart > button:hover #cart-total2{
 	color:#333
@@ -2845,8 +2846,10 @@ label{
 	font-size:16px;
 }
 
-
-
+.imgLoaded {
+	width: 1280px !important;
+	margin-left: 0px !important;
+}
 
 
 

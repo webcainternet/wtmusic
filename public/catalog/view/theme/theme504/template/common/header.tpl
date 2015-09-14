@@ -73,7 +73,7 @@
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.3&appId=239207146134241";
+  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.4&appId=456589514493827";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
@@ -94,7 +94,6 @@
 			<li><a href="<?php echo $register; ?>"><i class="fa fa-user"></i> <?php echo $text_register; ?></a></li>
 			<li><a href="<?php echo $login; ?>"><i class="fa fa-lock"></i><?php echo $text_login; ?></a></li>
 			<?php } ?>
-			<li><a href="<?php echo $wishlist; ?>" id="wishlist-total2" title="<?php echo $text_wishlist; ?>"><i class="fa fa-heart"></i> <span><?php echo $text_wishlist; ?></span></a></li>
 			<li><a href="<?php echo $shopping_cart; ?>" title="<?php echo $text_shopping_cart; ?>"><i class="fa fa-shopping-cart"></i> <span><?php echo $text_shopping_cart; ?></span></a></li>
 			<li><a href="<?php echo $checkout; ?>" title="<?php echo $text_checkout; ?>"><i class="fa fa-share"></i> <span><?php echo $text_checkout; ?></span></a></li>
 		</ul>
@@ -161,21 +160,24 @@
 						<?php } ?>
 					</ul>
 					</li>
-					<li><a href="<?php echo $wishlist; ?>" id="wishlist-total" title="<?php echo $text_wishlist; ?>"><i class="fa fa-heart hidden-md hidden-lg"></i> <span class="hidden-sm"><?php echo $text_wishlist; ?></span></a></li>
 					<li><a href="<?php echo $shopping_cart; ?>" title="<?php echo $text_shopping_cart; ?>"><i class="fa fa-shopping-cart hidden-md hidden-lg"></i> <span class="hidden-sm"><?php echo $text_shopping_cart; ?></span></a></li>
 					<li><a href="<?php echo $checkout; ?>" title="<?php echo $text_checkout; ?>"><i class="fa fa-share hidden-md hidden-lg"></i> <span class="hidden-sm"><?php echo $text_checkout; ?></span></a></li>
 				</ul>
 				</div>
 		</nav>
 		<div class="box-right">
-			<?php echo $cart; ?>
 			<?php echo $search; ?>
 			<ul class="soc-icon">
-				<li><a href="//www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
-				<li><a href="//www.twitter.com/"><i class="fa fa-twitter"></i></a></li>
-				<li><a href="//www.pinterest.com/"><i class="fa fa-pinterest"></i></a></li>
+				<li><a href="https://www.facebook.com/WTMusic-1410060492633924/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+				<?php /* <li><a href="//www.twitter.com/"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="//www.pinterest.com/"><i class="fa fa-pinterest"></i></a></li> */ ?>
 			</ul>
-			<div class="clear"></div>
+
+			<?php /*
+			<div style="float: right; position: relative; right: 0px;">
+				<?php echo $cart; ?>
+			</div>
+			*/ ?>
 		</div>
 	</div>
 </header>
