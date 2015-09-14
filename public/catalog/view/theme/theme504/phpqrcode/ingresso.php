@@ -209,6 +209,8 @@ WHERE oo.name = 'Nome no ingresso' AND oo2.name = 'CPF no ingresso' AND op.order
         </div>
     </div>
 
+    <hr>
+
 <?php
             } 
     } 
