@@ -95,7 +95,21 @@
                 <a href="<?php echo $product['reorder']; ?>" data-toggle="tooltip" title="<?php echo $button_reorder; ?>" class="btn btn-primary"><i class="fa fa-shopping-cart"></i></a>
                 <?php } ?>
                 <a href="<?php echo $product['return']; ?>" data-toggle="tooltip" title="<?php echo $button_return; ?>" class="btn btn-danger"><i class="fa fa-reply"></i></a>
-                <br><br><a href="/catalog/view/theme/theme504/phpqrcode/ingresso.php" target="_blank"><i class="fa fa-reply">&nbsp;Emitir ingresso</i></a></td>
+                
+                <?php if ($histories) { ?>
+                    <?php foreach ($histories as $history) { ?>
+                      <?php $lasthistorywt = $history['status']; ?>
+                    <?php } ?>
+                <?php } ?>
+
+                <?php if ($lasthistorywt == 'Concluído') { ?>
+                  <br><br><a href="/catalog/view/theme/theme504/phpqrcode/ingresso.php?order_id=<?php echo $order_id; ?>" target="_blank"><i class="fa fa-reply">&nbsp;Emitir ingresso</i></a>
+                <?php } ?>               
+                
+
+                </td>
+
+
             </tr>
             <?php } ?>
             <?php foreach ($vouchers as $voucher) { ?>
