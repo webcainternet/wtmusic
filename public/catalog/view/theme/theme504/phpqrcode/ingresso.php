@@ -121,7 +121,7 @@ WHERE oo.name = 'Nome no ingresso' AND oo2.name = 'CPF no ingresso' AND op.order
 
 
 
-    <div id="ingresso-<?php echo $item_order_product_id; ?>">
+    <div id="ingresso-<?php echo $item_order_product_id; ?>" style="width: 100%;">
         <div class="cupom">
         <div class="col1">
         	<img src="http://wtmusic.com.br/image/catalog/logo_wtmusic_145x85.png">
