@@ -292,7 +292,24 @@
 							</div>
 						<?php } ?>
 					</div>
-				
+
+					<?php if ($product_id == 52 || $product_id == 58) { ?>
+						<div class="form-group form-horizontal">
+							<div class="form-group">
+								<div style="display:none;">
+								<label class="control-label col-sm-4" for="input-quantity"><?php echo $entry_qty; ?></label>
+								<div class="col-sm-2">
+									<input type="text" name="quantity" value="<?php echo $minimum; ?>" size="2" id="input-quantity" class="form-control" />
+								</div></div>
+							</div>
+							
+							<input type="hidden" name="product_id" value="<?php echo $product_id; ?>" />
+							<button type="button" id="button-cart" data-loading-text="<?php echo $text_loading; ?>" class="btn btn-add">Adicionar pessoa</button>
+
+							<a href="/index.php?route=checkout/cart"><button style="margin-top:10px; width: 100%;" type="button" id="button-cart2" data-loading-text="<?php echo $text_loading; ?>" class="btn btn-add">Finalizar pedido</button></a>
+						</div>
+					<? } else { ?>
+
 					<!-- Add to cart form -->
 					<div class="form-group form-horizontal">
 						<div class="form-group">
@@ -305,6 +322,7 @@
 						<input type="hidden" name="product_id" value="<?php echo $product_id; ?>" />
 						<button type="button" id="button-cart" data-loading-text="<?php echo $text_loading; ?>" class="btn btn-add"><?php echo $button_cart; ?></button>
 					</div>
+					<? } ?>
 
 					<ul class="product-buttons">
 						
