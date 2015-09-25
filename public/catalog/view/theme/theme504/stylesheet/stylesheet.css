@@ -852,10 +852,10 @@ footer h5 {
 .box .product-thumb .image{
 	border:1px solid #efefef;
 	padding:10px;
-	/* -webkit-transition: all 0.6s ease 0s;
+	-webkit-transition: all 0.6s ease 0s;
 	-moz-transition: all 0.6s ease 0s;
 	-o-transition: all 0.6s ease 0s;
-	transition: all 0.6s ease 0s; */
+	transition: all 0.6s ease 0s;
 }
 aside .product-thumb {
 	margin-bottom:0px;
