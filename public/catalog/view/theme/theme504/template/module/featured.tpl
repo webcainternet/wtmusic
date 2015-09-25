@@ -9,7 +9,9 @@
 					<?php echo $text_quick; ?>
 				</a>
 			
-			<div class="image"><a href="<?php echo $product['href']; ?>"><img alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" class="img-responsive lazy" data-src="<?php echo $product['thumb']; ?>" src="image/catalog/preload.gif"  /></a></div>
+			<div class="image">
+				<a href="<?php echo $product['href']; ?>">
+					<img alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" src="<?php echo $product['thumb']; ?>"  /></a></div>
 			<div class="caption">
 				<div class="name"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></div>
 				<!--<div class="description"><?php echo $product['description']; ?></div>-->
