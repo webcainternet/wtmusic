@@ -293,7 +293,7 @@
 						<?php } ?>
 					</div>
 
-					<?php if ($product_id == 52 || $product_id == 58) { ?>
+					<?php if ($product_id == 52 || $product_id == 58 || product_id == 59) { ?>
 						<div class="form-group form-horizontal">
 							<div class="form-group">
 								<div style="display:none;">
