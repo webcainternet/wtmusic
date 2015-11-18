@@ -105,6 +105,14 @@ jQuery(document).ready(function() {
 			    </a>
 			    <div class="product-detailes"> 
 				<a href="<?php echo $product['href']; ?>" class="product-name"><?php echo $product['name']; ?></a>
+
+				<?php if ($product['option']) { ?>
+					<?php foreach ($product['option'] as $option) { ?>
+						<br />
+						<small><b><?php echo $option['name']; ?>:</b> <br /><?php echo $option['value']; ?></small>
+					<?php } ?>
+				<?php } ?>
+
 				<div class="scrollproduct-price">
 				    <strong><?php echo $product['quantity'];?> x <span class="price"></span><?php echo $product['total']; ?></strong>
 				</div>
