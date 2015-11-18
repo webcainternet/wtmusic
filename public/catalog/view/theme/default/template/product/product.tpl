@@ -483,6 +483,8 @@ $('#button-cart').on('click', function() {
 				$('html, body').animate({ scrollTop: 0 }, 'slow');
 				
 				$('#cart > ul').load('index.php?route=common/cart/info ul li');
+        $('#right_toolbar > div').load('index.php?route=module/scrollingcart/info'); 
+        $('#left_toolbar > div').load('index.php?route=module/scrollingcart/info');
 			}
 		}
 	});

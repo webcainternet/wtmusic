@@ -40,6 +40,9 @@
 <?php foreach ($styles as $style) { ?>
 <link href="<?php echo $style['href']; ?>" type="text/css" rel="<?php echo $style['rel']; ?>" media="<?php echo $style['media']; ?>" />
 <?php } ?>
+
+<link href="catalog/view/javascript/scrollingcart/scrollingcart.css" rel="stylesheet">
+
 <script src="catalog/view/theme/theme504/js/common.js" type="text/javascript"></script>
 <script src="catalog/view/theme/theme504/js/tm-stick-up.js" type="text/javascript"></script>
 <script src="catalog/view/theme/theme504/js/jquery.unveil.js" type="text/javascript"></script>
