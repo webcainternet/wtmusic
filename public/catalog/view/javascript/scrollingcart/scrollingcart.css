@@ -39,7 +39,7 @@ line-height: 14px;background-color:#000000;color:#ffffff;}
 .shopping{ border-top: 1px solid #EEEEEE; padding-top:8px; margin-top:4px;} 
 #right_toolbar {position: fixed;right:5px;top: 30%;z-index: 50;width:45px;}
 #left_toolbar {position: fixed;left:0px;top: 30%;z-index: 500;width:45px;}
-#right_toolbar .shopping_cart_mini {position:absolute;bottom:-135px;margin-right:38px;right:0;left:auto;top:auto;overflow:hidden;width:261px;}
+#right_toolbar .shopping_cart_mini {position:absolute;bottom:auto;margin-right:38px;right:0;left:auto;top:-90px;overflow:hidden;width:261px;}
 #left_toolbar .shopping_cart_mini {position:absolute;bottom:-135px;margin-left:38px;right:auto;left:0;top:auto;overflow:hidden;width:250px;}
 .shoppingcart .fadelink {padding:5px 0px;position:absolute;right:0;top:0;float:right;border-radius:5px;}
 .shoppingcart:hover .fadelink span a {color:#fff;cursor: pointer;-webkit-transition: background-color 0.25s 0s ease;-moz-transition: background-color 0.25s 0s ease;-o-transition: background-color 0.25s 0s ease;}

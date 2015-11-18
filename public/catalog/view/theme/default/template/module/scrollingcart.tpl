@@ -97,8 +97,9 @@ jQuery(document).ready(function() {
 			<span class="scarttxtcolor"><?php echo $text_no_item; ?></span>
 		<?php } ?>		  
 		
- 	      		   
+ 	    <div style="max-height: 280px; overflow-y: scroll; overflow-x: hidden;">  		   
 		<?php foreach ($products as $product) { ?>
+		
 			<div class="item">
 			    <a href="<?php echo $product['href']; ?>" class="product-image">
 			      <img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" class="img-thumbnail" />
@@ -125,8 +126,9 @@ jQuery(document).ready(function() {
 				</div>
 			    <?php } ?>
 			</div>
-
 		<?php } ?>
+		</div>
+
 		<?php if(count($products)) { ?>
 			<div>
 			  <span class="scarttxtcolor">Total:</span> <span class="scrollproduct-price"><strong><?php echo $text_total; ?></strong></span>
