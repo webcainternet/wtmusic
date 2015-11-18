@@ -90,7 +90,7 @@ jQuery(document).ready(function() {
 	      <div class="inner-wrapper"> 
 		<?php if(count($products)) { ?>
 		    <?php if(count($products) > 0){ ?>
-			<span class="scarttxtcolor">There are <?php echo $text_items_count; ?> items in your cart.</span>
+			<span class="scarttxtcolor">Você tem <?php echo $text_items_count; ?> item(s) em seu carrinho.</span>
 		    <?php } ?>
 				  
 		<?php }else{  ?>
@@ -121,11 +121,11 @@ jQuery(document).ready(function() {
 		<?php } ?>
 		<?php if(count($products)) { ?>
 			<div>
-			  <span class="scarttxtcolor"><?php echo $text_cart_total;?></span> <span class="scrollproduct-price"><strong><?php echo $text_total; ?></strong></span>
+			  <span class="scarttxtcolor">Total:</span> <span class="scrollproduct-price"><strong><?php echo $text_total; ?></strong></span>
 			</div>
 			<div class="shopping"> 
-			    <a href="<?php echo $checkout ?>" class="button"><?php echo $text_checkout;?></a> 
-			    <a href="<?php echo $cart; ?>" class="button"><?php echo $text_cart;?></a> 
+			    <a href="<?php echo $cart; ?>" class="button">Ver carrinho</a> 
+			    <a href="<?php echo $checkout ?>" class="button">Finalizar pedido</a> 
 			</div>
 	      <?php } ?>
 	      </div><!-- inner wrapper-->
