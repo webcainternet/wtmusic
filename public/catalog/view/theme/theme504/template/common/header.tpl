@@ -186,11 +186,11 @@
 				<li><a href="//www.pinterest.com/"><i class="fa fa-pinterest"></i></a></li> */ ?>
 			</ul>
 
-			<?php /*
-			<div style="float: right; position: relative; right: 0px;">
+
+			<div style="float: left; position: relative; right: 0px; width: 790px;">
 				<?php echo $cart; ?>
 			</div>
-			*/ ?>
+
 		</div>
 	</div>
 </header>

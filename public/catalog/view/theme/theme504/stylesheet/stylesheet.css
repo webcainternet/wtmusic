@@ -302,6 +302,7 @@ ul.soc-icon li i {
 	display:block;
 	float:left;
 	color: #1D1F20;
+	    width: 230px;
 }
 #cart > button:hover #cart-total2{
 	color:#333

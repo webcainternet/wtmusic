@@ -1,7 +1,10 @@
 <div class="box-cart" style="min-width: 150px;text-align: right;margin-right: 10px;">
 <div id="cart">
 	<button type="button" data-toggle="dropdown" data-loading-text="<?php echo $text_loading; ?>" class="dropdown-toggle">
-		<i class="fa fa-shopping-cart"><span style="padding-left: 15px; font-size: 14px; text-transform: uppercase; padding-left: 10px;"></span></i> 
+		<i class="fa fa-shopping-cart">
+		<span style="padding-left: 15px; font-size: 14px; text-transform: uppercase; padding-left: 10px;">
+		<div style="display: inline-block; margin: 0px; color: #1D1F20; font-size: 20px;">MEU CARRINHO</div>
+		</span></i> 
 		<?php /* 
 		<strong><?php echo $text_shopping_cart; ?></strong>
 		<span id="cart-total"><?php echo $text_items; ?></span>
@@ -9,7 +12,9 @@
 		*/ ?>
 	</button>
 
-  <ul class="dropdown-menu pull-right">
+
+
+  <ul class="dropdown-menu pull-right" style="margin-right: -200px;">
 	<?php if ($products || $vouchers) { ?>
 	<li>
 		<div>
