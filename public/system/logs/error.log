@@ -39,3 +39,145 @@
 2015-09-13 20:03:48 - PHP Warning:  mysqli::query(): (21000/1242): Subquery returns more than 1 row in /srv/httpd/wtmusic.com.br/wtmusic/public/system/library/db/mysqli.php on line 18
 2015-09-13 20:03:48 - PHP Notice:  Error: Subquery returns more than 1 row<br />Error No: 1242<br />SELECT DISTINCT *, (SELECT GROUP_CONCAT(cd1.name ORDER BY level SEPARATOR '&nbsp;&nbsp;&gt;&nbsp;&nbsp;') FROM oc_category_path cp LEFT JOIN oc_category_description cd1 ON (cp.path_id = cd1.category_id AND cp.category_id != cp.path_id) WHERE cp.category_id = c.category_id AND cd1.language_id = '4' GROUP BY cp.category_id) AS path, (SELECT DISTINCT keyword FROM oc_url_alias WHERE query = 'category_id=51') AS keyword FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) WHERE c.category_id = '51' AND cd2.language_id = '4' in /srv/httpd/wtmusic.com.br/wtmusic/public/system/library/db/mysqli.php on line 40
 2015-09-13 20:03:48 - PHP Notice:  Trying to get property of non-object in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/model/catalog/category.php on line 213
+2015-09-14 1:02:48 - Módulo Correios :: produto com dimensões e peso inválidos (REPUBLICA - CD - POINT OF NO RETURN). Consulte os limites de dimensões e de peso em http://www.correios.com.br/para-voce/precisa-de-ajuda/limites-de-dimensoes-e-de-peso
+2015-09-14 1:02:48 - Módulo Correios :: produto com dimensões e peso inválidos (REPUBLICA - CD - POINT OF NO RETURN). Consulte os limites de dimensões e de peso em http://www.correios.com.br/para-voce/precisa-de-ajuda/limites-de-dimensoes-e-de-peso
+2015-09-14 1:02:48 - Módulo Correios :: produto com dimensões e peso inválidos (REPUBLICA - CD - POINT OF NO RETURN). Consulte os limites de dimensões e de peso em http://www.correios.com.br/para-voce/precisa-de-ajuda/limites-de-dimensoes-e-de-peso
+2015-09-14 1:02:48 - Módulo Correios :: produto com dimensões e peso inválidos (REPUBLICA - CD - POINT OF NO RETURN). Consulte os limites de dimensões e de peso em http://www.correios.com.br/para-voce/precisa-de-ajuda/limites-de-dimensoes-e-de-peso
+2015-09-14 1:02:48 - Módulo Correios :: produto com dimensões e peso inválidos (REPUBLICA - CD - POINT OF NO RETURN). Consulte os limites de dimensões e de peso em http://www.correios.com.br/para-voce/precisa-de-ajuda/limites-de-dimensoes-e-de-peso
+2015-09-14 1:28:48 - Módulo Correios :: produto com dimensões e peso inválidos (SHOW - OZROCKFEST - 04 OUT 2015 -  BARANGA). Consulte os limites de dimensões e de peso em http://www.correios.com.br/para-voce/precisa-de-ajuda/limites-de-dimensoes-e-de-peso
+2015-09-14 1:28:48 - Módulo Correios :: produto com dimensões e peso inválidos (SHOW - OZROCKFEST - 04 OUT 2015 -  BARANGA). Consulte os limites de dimensões e de peso em http://www.correios.com.br/para-voce/precisa-de-ajuda/limites-de-dimensoes-e-de-peso
+2015-09-14 1:28:48 - Módulo Correios :: produto com dimensões e peso inválidos (SHOW - OZROCKFEST - 04 OUT 2015 -  BARANGA). Consulte os limites de dimensões e de peso em http://www.correios.com.br/para-voce/precisa-de-ajuda/limites-de-dimensoes-e-de-peso
+2015-09-14 1:28:48 - Módulo Correios :: produto com dimensões e peso inválidos (SHOW - OZROCKFEST - 04 OUT 2015 -  BARANGA). Consulte os limites de dimensões e de peso em http://www.correios.com.br/para-voce/precisa-de-ajuda/limites-de-dimensoes-e-de-peso
+2015-09-14 1:28:48 - Módulo Correios :: produto com dimensões e peso inválidos (SHOW - OZROCKFEST - 04 OUT 2015 -  BARANGA). Consulte os limites de dimensões e de peso em http://www.correios.com.br/para-voce/precisa-de-ajuda/limites-de-dimensoes-e-de-peso
+2015-09-29 19:08:27 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 346
+2015-09-29 19:08:27 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 355
+2015-09-29 19:08:27 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 370
+2015-09-29 19:08:27 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 385
+2015-09-29 19:08:27 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 409
+2015-09-29 19:08:27 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 419
+2015-10-03 3:08:37 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 346
+2015-10-03 3:08:37 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 355
+2015-10-03 3:08:37 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 370
+2015-10-03 3:08:37 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 385
+2015-10-03 3:08:37 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 409
+2015-10-03 3:08:37 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 419
+2015-10-03 18:51:27 - PHP Notice:  Use of undefined constant product_id - assumed 'product_id' in /srv/httpd/wtmusic.com.br/wtmusic/public/catalog/view/theme/theme504/template/product/product.tpl on line 296
+2015-10-04 10:03:38 - PHP Notice:  Use of undefined constant product_id - assumed 'product_id' in /srv/httpd/wtmusic.com.br/wtmusic/public/catalog/view/theme/theme504/template/product/product.tpl on line 296
+2015-10-05 14:04:27 - PHP Notice:  Use of undefined constant product_id - assumed 'product_id' in /srv/httpd/wtmusic.com.br/wtmusic/public/catalog/view/theme/theme504/template/product/product.tpl on line 296
+2015-10-05 14:19:00 - PHP Notice:  Use of undefined constant product_id - assumed 'product_id' in /srv/httpd/wtmusic.com.br/wtmusic/public/catalog/view/theme/theme504/template/product/product.tpl on line 296
+2015-10-05 16:25:32 - PHP Notice:  Use of undefined constant product_id - assumed 'product_id' in /srv/httpd/wtmusic.com.br/wtmusic/public/catalog/view/theme/theme504/template/product/product.tpl on line 296
+2015-10-05 17:00:11 - PHP Notice:  Use of undefined constant product_id - assumed 'product_id' in /srv/httpd/wtmusic.com.br/wtmusic/public/catalog/view/theme/theme504/template/product/product.tpl on line 296
+2015-10-05 17:11:04 - PHP Notice:  Use of undefined constant product_id - assumed 'product_id' in /srv/httpd/wtmusic.com.br/wtmusic/public/catalog/view/theme/theme504/template/product/product.tpl on line 296
+2015-10-05 21:58:36 - PHP Notice:  Use of undefined constant product_id - assumed 'product_id' in /srv/httpd/wtmusic.com.br/wtmusic/public/catalog/view/theme/theme504/template/product/product.tpl on line 296
+2015-10-06 5:03:07 - PHP Notice:  Use of undefined constant product_id - assumed 'product_id' in /srv/httpd/wtmusic.com.br/wtmusic/public/catalog/view/theme/theme504/template/product/product.tpl on line 296
+2015-10-06 10:49:26 - PHP Notice:  Use of undefined constant product_id - assumed 'product_id' in /srv/httpd/wtmusic.com.br/wtmusic/public/catalog/view/theme/theme504/template/product/product.tpl on line 296
+2015-10-06 15:47:32 - PHP Notice:  Use of undefined constant product_id - assumed 'product_id' in /srv/httpd/wtmusic.com.br/wtmusic/public/catalog/view/theme/theme504/template/product/product.tpl on line 296
+2015-10-06 15:48:21 - PHP Notice:  Use of undefined constant product_id - assumed 'product_id' in /srv/httpd/wtmusic.com.br/wtmusic/public/catalog/view/theme/theme504/template/product/product.tpl on line 296
+2015-10-06 15:48:25 - PHP Notice:  Use of undefined constant product_id - assumed 'product_id' in /srv/httpd/wtmusic.com.br/wtmusic/public/catalog/view/theme/theme504/template/product/product.tpl on line 296
+2015-10-06 15:48:36 - PHP Notice:  Use of undefined constant product_id - assumed 'product_id' in /srv/httpd/wtmusic.com.br/wtmusic/public/catalog/view/theme/theme504/template/product/product.tpl on line 296
+2015-10-06 15:48:57 - PHP Notice:  Use of undefined constant product_id - assumed 'product_id' in /srv/httpd/wtmusic.com.br/wtmusic/public/catalog/view/theme/theme504/template/product/product.tpl on line 296
+2015-10-06 15:49:26 - PHP Notice:  Use of undefined constant product_id - assumed 'product_id' in /srv/httpd/wtmusic.com.br/wtmusic/public/catalog/view/theme/theme504/template/product/product.tpl on line 296
+2015-10-06 15:49:26 - PHP Notice:  Use of undefined constant product_id - assumed 'product_id' in /srv/httpd/wtmusic.com.br/wtmusic/public/catalog/view/theme/theme504/template/product/product.tpl on line 296
+2015-10-06 15:49:31 - PHP Notice:  Use of undefined constant product_id - assumed 'product_id' in /srv/httpd/wtmusic.com.br/wtmusic/public/catalog/view/theme/theme504/template/product/product.tpl on line 296
+2015-10-06 16:12:39 - PHP Notice:  Use of undefined constant product_id - assumed 'product_id' in /srv/httpd/wtmusic.com.br/wtmusic/public/catalog/view/theme/theme504/template/product/product.tpl on line 296
+2015-10-06 18:40:57 - PHP Notice:  Use of undefined constant product_id - assumed 'product_id' in /srv/httpd/wtmusic.com.br/wtmusic/public/catalog/view/theme/theme504/template/product/product.tpl on line 296
+2015-10-06 19:50:42 - PHP Notice:  Use of undefined constant product_id - assumed 'product_id' in /srv/httpd/wtmusic.com.br/wtmusic/public/catalog/view/theme/theme504/template/product/product.tpl on line 296
+2015-10-06 20:35:17 - PHP Notice:  Use of undefined constant product_id - assumed 'product_id' in /srv/httpd/wtmusic.com.br/wtmusic/public/catalog/view/theme/theme504/template/product/product.tpl on line 296
+2015-10-06 20:35:30 - PHP Notice:  Use of undefined constant product_id - assumed 'product_id' in /srv/httpd/wtmusic.com.br/wtmusic/public/catalog/view/theme/theme504/template/product/product.tpl on line 296
+2015-10-06 20:35:51 - PHP Notice:  Use of undefined constant product_id - assumed 'product_id' in /srv/httpd/wtmusic.com.br/wtmusic/public/catalog/view/theme/theme504/template/product/product.tpl on line 296
+2015-10-06 20:36:10 - PHP Notice:  Use of undefined constant product_id - assumed 'product_id' in /srv/httpd/wtmusic.com.br/wtmusic/public/catalog/view/theme/theme504/template/product/product.tpl on line 296
+2015-10-06 20:36:23 - PHP Notice:  Use of undefined constant product_id - assumed 'product_id' in /srv/httpd/wtmusic.com.br/wtmusic/public/catalog/view/theme/theme504/template/product/product.tpl on line 296
+2015-10-06 20:36:28 - PHP Notice:  Use of undefined constant product_id - assumed 'product_id' in /srv/httpd/wtmusic.com.br/wtmusic/public/catalog/view/theme/theme504/template/product/product.tpl on line 296
+2015-10-06 20:37:32 - PHP Notice:  Use of undefined constant product_id - assumed 'product_id' in /srv/httpd/wtmusic.com.br/wtmusic/public/catalog/view/theme/theme504/template/product/product.tpl on line 296
+2015-10-07 18:40:17 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 346
+2015-10-07 18:40:17 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 355
+2015-10-07 18:40:17 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 370
+2015-10-07 18:40:17 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 385
+2015-10-07 18:40:17 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 409
+2015-10-07 18:40:17 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 419
+2015-10-07 18:40:38 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 346
+2015-10-07 18:40:38 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 355
+2015-10-07 18:40:38 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 370
+2015-10-07 18:40:38 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 385
+2015-10-07 18:40:38 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 409
+2015-10-07 18:40:38 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 419
+2015-10-07 19:42:06 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 346
+2015-10-07 19:42:06 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 355
+2015-10-07 19:42:06 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 370
+2015-10-07 19:42:06 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 385
+2015-10-07 19:42:06 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 409
+2015-10-07 19:42:06 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 419
+2015-10-08 3:56:38 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 346
+2015-10-08 3:56:38 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 355
+2015-10-08 3:56:38 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 370
+2015-10-08 3:56:38 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 385
+2015-10-08 3:56:38 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 409
+2015-10-08 3:56:38 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 419
+2015-10-08 3:57:11 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 346
+2015-10-08 3:57:11 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 355
+2015-10-08 3:57:11 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 370
+2015-10-08 3:57:11 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 385
+2015-10-08 3:57:11 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 409
+2015-10-08 3:57:11 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 419
+2015-10-08 4:03:45 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 346
+2015-10-08 4:03:45 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 355
+2015-10-08 4:03:45 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 370
+2015-10-08 4:03:45 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 385
+2015-10-08 4:03:45 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 409
+2015-10-08 4:03:45 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 419
+2015-10-08 4:03:45 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 346
+2015-10-08 4:03:45 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 355
+2015-10-08 4:03:45 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 370
+2015-10-08 4:03:45 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 385
+2015-10-08 4:03:45 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 409
+2015-10-08 4:03:45 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 419
+2015-10-08 19:46:49 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 346
+2015-10-08 19:46:49 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 355
+2015-10-08 19:46:49 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 370
+2015-10-08 19:46:49 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 385
+2015-10-08 19:46:49 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 409
+2015-10-08 19:46:49 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 419
+2015-10-08 20:15:56 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 346
+2015-10-08 20:15:56 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 355
+2015-10-08 20:15:56 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 370
+2015-10-08 20:15:56 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 385
+2015-10-08 20:15:56 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 409
+2015-10-08 20:15:56 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 419
+2015-10-08 20:25:01 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 346
+2015-10-08 20:25:01 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 355
+2015-10-08 20:25:01 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 370
+2015-10-08 20:25:01 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 385
+2015-10-08 20:25:01 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 409
+2015-10-08 20:25:01 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 419
+2015-10-11 3:41:02 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 346
+2015-10-11 3:41:02 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 355
+2015-10-11 3:41:02 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 370
+2015-10-11 3:41:02 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 385
+2015-10-11 3:41:02 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 409
+2015-10-11 3:41:02 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 419
+2015-10-14 23:49:48 - PHP Warning:  Invalid argument supplied for foreach() in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/controller/module/featured.php on line 124
+2015-10-16 13:09:50 - Módulo Correios :: produto com dimensões e peso inválidos (SHOW - OZROCKFEST - 25 OUT 2015 - FESTA DA RESSACA &quot;SEMANA DO ROCK&quot;). Consulte os limites de dimensões e de peso em http://www.correios.com.br/para-voce/precisa-de-ajuda/limites-de-dimensoes-e-de-peso
+2015-10-16 13:09:50 - Módulo Correios :: produto com dimensões e peso inválidos (SHOW - OZROCKFEST - 25 OUT 2015 - FESTA DA RESSACA &quot;SEMANA DO ROCK&quot;). Consulte os limites de dimensões e de peso em http://www.correios.com.br/para-voce/precisa-de-ajuda/limites-de-dimensoes-e-de-peso
+2015-10-16 13:09:50 - Módulo Correios :: produto com dimensões e peso inválidos (SHOW - OZROCKFEST - 25 OUT 2015 - FESTA DA RESSACA &quot;SEMANA DO ROCK&quot;). Consulte os limites de dimensões e de peso em http://www.correios.com.br/para-voce/precisa-de-ajuda/limites-de-dimensoes-e-de-peso
+2015-10-16 13:09:50 - Módulo Correios :: produto com dimensões e peso inválidos (SHOW - OZROCKFEST - 25 OUT 2015 - FESTA DA RESSACA &quot;SEMANA DO ROCK&quot;). Consulte os limites de dimensões e de peso em http://www.correios.com.br/para-voce/precisa-de-ajuda/limites-de-dimensoes-e-de-peso
+2015-10-16 13:09:50 - Módulo Correios :: produto com dimensões e peso inválidos (SHOW - OZROCKFEST - 25 OUT 2015 - FESTA DA RESSACA &quot;SEMANA DO ROCK&quot;). Consulte os limites de dimensões e de peso em http://www.correios.com.br/para-voce/precisa-de-ajuda/limites-de-dimensoes-e-de-peso
+2015-10-17 15:26:10 - PagSeguro :: [HTTP 400] - BAD_REQUEST 0 [11014] - senderPhone invalid value: 0221009
+2015-10-17 18:08:50 - PagSeguro :: [HTTP 400] - BAD_REQUEST 0 [11014] - senderPhone invalid value: 11969911004
+2015-10-18 0:30:04 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 346
+2015-10-18 0:30:04 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 355
+2015-10-18 0:30:04 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 370
+2015-10-18 0:30:04 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 385
+2015-10-18 0:30:04 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 409
+2015-10-18 0:30:04 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 419
+2015-10-18 13:45:15 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 346
+2015-10-18 13:45:15 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 355
+2015-10-18 13:45:15 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 370
+2015-10-18 13:45:15 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 385
+2015-10-18 13:45:15 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 409
+2015-10-18 13:45:15 - PHP Notice:  Uninitialized string offset: 1 in /srv/httpd/wtmusic.com.br/wtmusic/public/admin/view/template/sale/customer_form.tpl on line 419
+2015-11-19 4:27:48 - Módulo Correios :: produto com dimensões e peso inválidos (SHOW - OZROCKFEST - 06 DEZ 2015 -  RATOS DE PORÃO). Consulte os limites de dimensões e de peso em http://www.correios.com.br/para-voce/precisa-de-ajuda/limites-de-dimensoes-e-de-peso
+2015-11-19 4:27:48 - Módulo Correios :: produto com dimensões e peso inválidos (SHOW - OZROCKFEST - 06 DEZ 2015 -  RATOS DE PORÃO). Consulte os limites de dimensões e de peso em http://www.correios.com.br/para-voce/precisa-de-ajuda/limites-de-dimensoes-e-de-peso
+2015-11-19 4:27:48 - Módulo Correios :: produto com dimensões e peso inválidos (SHOW - OZROCKFEST - 06 DEZ 2015 -  RATOS DE PORÃO). Consulte os limites de dimensões e de peso em http://www.correios.com.br/para-voce/precisa-de-ajuda/limites-de-dimensoes-e-de-peso
+2015-11-19 4:27:48 - Módulo Correios :: produto com dimensões e peso inválidos (SHOW - OZROCKFEST - 06 DEZ 2015 -  RATOS DE PORÃO). Consulte os limites de dimensões e de peso em http://www.correios.com.br/para-voce/precisa-de-ajuda/limites-de-dimensoes-e-de-peso
+2015-11-19 4:27:48 - Módulo Correios :: produto com dimensões e peso inválidos (SHOW - OZROCKFEST - 06 DEZ 2015 -  RATOS DE PORÃO). Consulte os limites de dimensões e de peso em http://www.correios.com.br/para-voce/precisa-de-ajuda/limites-de-dimensoes-e-de-peso
+2015-11-19 4:39:10 - PagSeguro :: Parâmetros de notificação retornado pelo PagSeguro são inválidos.

@@ -279,6 +279,13 @@ class ControllerCheckoutCart extends Controller {
 	}
 
 	public function add() {
+		/*var_dump($_POST[option]); exit;
+
+		$products = $this->cart->getProducts();
+		var_dump($products); exit;
+
+		print_r($this->session->data['cart']);exit;
+		var_dump($_SESSION);exit; */
 		$this->load->language('checkout/cart');
 
 		$json = array();
@@ -335,6 +342,25 @@ class ControllerCheckoutCart extends Controller {
 			}
 
 			if (!$json) {
+				//Adiciona ' ' (Espaço) caso já exista CPF ou Nome no carrinho
+				$textcartprod = $this->cart->getProducts();
+				foreach($option as $key=>$value) {
+					//Substitui .,- por NULL
+					$value = $option[$key];
+					$value = str_replace(',', '', $value);
+					$value = str_replace('.', '', $value);
+					$value = str_replace('-', '', $value);
+					$value = str_replace('/', '', $value);
+					$option[$key] = $value;
+
+					$qtdfound = substr_count(serialize($textcartprod), $value);
+					if ($qtdfound >= 1) {
+						$qtdfound++;
+						$option[$key] = $value.' #'.$qtdfound; 
+					}
+				}
+				//FIM Adiciona ' ' (Espaço) caso já exista CPF ou Nome no carrinho
+
 				$this->cart->add($this->request->post['product_id'], $this->request->post['quantity'], $option, $recurring_id);
 
 				$json['success'] = sprintf($this->language->get('text_success'), $this->url->link('product/product', 'product_id=' . $this->request->post['product_id']), $product_info['name'], $this->url->link('checkout/cart'));

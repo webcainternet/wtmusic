@@ -1,3 +1,8 @@
+<?php $link = mysqli_connect(DB_HOSTNAME, DB_USERNAME, DB_PASSWORD, DB_DATABASE);
+if (mysqli_connect_errno()) {
+	printf("Connect failed: %s\n", mysqli_connect_error());
+	exit();
+} ?>
 <?php echo $header; ?>
 <div class="container">
   <ul class="breadcrumb">
@@ -73,13 +78,35 @@
 				  <?php } ?></td>
 				<td class="text-left"><?php echo $product['model']; ?></td>
 				<td class="text-left">
-					<div class="input-group btn-block" style="max-width: 200px;">
-						<p class="clearfix"><input type="text" name="quantity[<?php echo $product['key']; ?>]" value="<?php echo $product['quantity']; ?>" size="1" class="form-control cart-q" id="cart-q" /></p>
-						<div>
-							<button type="submit" data-toggle="tooltip" title="<?php echo $button_update; ?>" class="btn btn-primary"><i class="fa fa-refresh"></i></button>
-							<button type="button" data-toggle="tooltip" title="<?php echo $button_remove; ?>" class="btn btn-danger" onclick="cart.remove('<?php echo $product['key']; ?>');"><i class="fa fa-times-circle"></i></button>
-						</div>
+
+<?php
+
+$getidprod = explode("product_id=", $product["href"]);
+
+if ($result = mysqli_query($link, "select * from oc_product_qrcode WHERE product_id = ".$getidprod[1])) {
+    $row_cnt = mysqli_num_rows($result);
+    mysqli_free_result($result);
+}
+
+if ($row_cnt >= 1) { ?>
+				<div class="input-group btn-block" style="max-width: 200px; text-align: center;">
+					1
+					<div>
+                                                <button type="button" data-toggle="tooltip" title="<?php echo $button_remove; ?>" class="btn btn-danger" onclick="cart.remove('<?php echo $product['key']; ?>');"><i class="fa fa-times-circle"></i></button>
+                                        </div>
+
+				</div>
+<?php }
+else { ?>
+				<div class="input-group btn-block" style="max-width: 200px;">
+					<p class="clearfix"><input type="text" name="quantity[<?php echo $product['key']; ?>]" value="<?php echo $product['quantity']; ?>" size="1" class="form-control cart-q" id="cart-q" /></p>
+					<div>
+						<button type="submit" data-toggle="tooltip" title="<?php echo $button_update; ?>" class="btn btn-primary"><i class="fa fa-refresh"></i></button>
+						<button type="button" data-toggle="tooltip" title="<?php echo $button_remove; ?>" class="btn btn-danger" onclick="cart.remove('<?php echo $product['key']; ?>');"><i class="fa fa-times-circle"></i></button>
 					</div>
+				</div>
+<?php } ?>
+
 				</td>
 				<td class="text-right"><div class="price"><?php echo $product['price']; ?></div></td>
 				<td class="text-right"><div class="price price-total"><?php echo $product['total']; ?></div></td>
@@ -158,3 +185,4 @@ function getChar(event) {
 }
 </script>
 <?php echo $footer; ?> 
+<?php mysqli_close($link); ?>

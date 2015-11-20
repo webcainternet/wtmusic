@@ -1,7 +1,7 @@
-AuthUserFile /srv/httpd/wtmusic.com.br/wtmusic/public/.htpasswd
-AuthType Basic
-AuthName "Restrito"
-Require valid-user
+#AuthUserFile /srv/httpd/wtmusic.com.br/wtmusic/public/.htpasswd
+#AuthType Basic
+#AuthName "Restrito"
+#Require valid-user
 
 RewriteEngine On
 RewriteBase /
