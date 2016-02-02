@@ -14,3 +14,7 @@ $_['text_logout']        = 'Sair';
 $_['text_checkout']      = 'Finalizar Pedido';
 $_['text_search']        = 'Buscar Produto';
 $_['text_all']           = 'Ver Todos';
+
+$_['text_category']      = 'Categorias';
+$_['text_latest_added']   = 'Últimos adicionado(s):';
+$_['text_items2']   = '%s';

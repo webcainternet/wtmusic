@@ -137,7 +137,7 @@
 		</ul>
 	</div>
 </div>
-<div id="page">
+<div id="pagetop">
 <div class="shadow"></div>
 <div class="toprow-1">
 	<a class="swipe-control" href="#"><i class="fa fa-align-justify"></i></a>
@@ -145,7 +145,7 @@
 
 
 <header>
-	<div class="container">
+	<div class="container" style="width: 1270px;"> 
 		<div id="logo">
 			<?php if ($logo) { ?>
 			<a href="<?php echo $home; ?>"><img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" class="img-responsive" /></a>
@@ -187,7 +187,7 @@
 			</ul>
 
 
-			<div style="float: left; position: relative; right: 0px; width: 790px;">
+			<div style="float: right; position: relative; right: 0px; width: 790px;">
 				<?php echo $cart; ?>
 			</div>
 
@@ -195,8 +195,11 @@
 	</div>
 </header>
 
+</div>
+<div id="page">
+
 <?php if ($categories) { ?>
-<div class="container">
+<div class="container" style="width: 1270px;">
 	<div id="menu-gadget">
 		<div id="menu-icon"><?php echo $text_category; ?></div>
 		<?php if ($categories) {  echo $categories; } ?>
@@ -212,7 +215,7 @@
 	});
 </script>-->
 <div id="tm_menu" class="nav__primary">
-	<div class="container">
+	<div class="container" style="width: 1270px;">
 		<div class="menu-shadow">
 			<?php if ($categories) {  echo $categories; } ?>
 

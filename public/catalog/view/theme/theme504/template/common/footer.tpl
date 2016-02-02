@@ -31,7 +31,7 @@
 	
 	<div class="dvnews">Receba as novidades de nosso site</div>
 	<div class="dvnews2">
-		<input type="text" name="email" id="email" placeholder="Digite seu email" style="width: 330px; height: 38px; border: 0px;">
+		<input type="text" name="email" id="email" placeholder="Digite seu email" style="width: 330px; height: 38px; border: 0px; padding-left: 10px;">
 		<input type="button" value="ENVIAR" onclick="javascript: emailadd();" style="border: 0px; height: 39px; width: 76px; background-color: #EEE; padding-bottom: 0px;">
 	</div>
 

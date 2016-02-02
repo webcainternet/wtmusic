@@ -1,80 +1,82 @@
-<div class="box-cart" style="min-width: 150px;text-align: right;margin-right: 10px;">
-<div id="cart">
-	<button type="button" data-toggle="dropdown" data-loading-text="<?php echo $text_loading; ?>" class="dropdown-toggle">
-		<i class="fa fa-shopping-cart">
-		<span style="padding-left: 15px; font-size: 14px; text-transform: uppercase; padding-left: 10px;">
-		<div style="display: inline-block; margin: 0px; color: #1D1F20; font-size: 20px;">MEU CARRINHO</div>
-		</span></i> 
-		<?php /* 
-		<strong><?php echo $text_shopping_cart; ?></strong>
+<div id="cart"  style="float: right;">
+
+  <div class="heading">
+	<span class="link_a"> 
+		<i class="fa fa-shopping-cart"></i>
+		<b>Carrinho</b>
+		<span class="sc-button"></span>
+		<span id="cart-total2"><?php echo $text_items2; ?></span>
 		<span id="cart-total"><?php echo $text_items; ?></span>
-		<?php if (isset($text_items2)) { ?><span id="cart-total2"><?php echo $text_items2; ?></span><?php } ?>
-		*/ ?>
-	</button>
-
-
-
-  <ul class="dropdown-menu pull-right" style="margin-right: -200px;">
-	<?php if ($products || $vouchers) { ?>
-	<li>
-		<div>
-	  <table class="table">
-		<?php foreach ($products as $product) { ?>
+		<i class="fa fa-caret-down"></i>
+		<span class="clear"></span>
+		</span>
+	</div>
+	
+  <div class="content">
+  <div class="content-scroll">
+	
+	<?php
+	
+	 if ($products || $vouchers) { 
+	 
+	 ?>
+	 <span class="latest-added"><?php echo $text_latest_added;?></span>
+	<br /><br />
+	<div class="mini-cart-info">
+	  <table class="cart">
+		<?php $i=0; $products=array_reverse($products);  foreach ($products as $product) {
+			$i++;
+			if ($i>2) break;
+		 ?>
 		<tr>
-		  <td class="text-center"><?php if ($product['thumb']) { ?>
-			<div class="image"><a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" class="img-thumbnail" /></a></div>
+		  <td class="image"><?php if ($product['thumb']) { ?>
+			<a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" /></a>
 			<?php } ?></td>
-		  <td class="text-left">
-			<div class="name"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></div>
-			<?php if ($product['option']) { ?>
-			<?php foreach ($product['option'] as $option) { ?>
-			
-			- <small><?php echo $option['name']; ?> <?php echo $option['value']; ?></small>
-			<?php } ?>
-			<?php } ?>
-			<?php if ($product['recurring']) { ?>
-			<br />
-			- <small><?php echo $text_recurring; ?> <?php echo $product['recurring']; ?></small>
-			<?php } ?>
-			<div> x <?php echo $product['quantity']; ?>  <span class="price-cart"><?php echo $product['total']; ?></span></div>
-			</td>
+		  <td class="name"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a>
+			<div>
+			  <?php foreach ($product['option'] as $option) { ?>
+			  - <small><?php echo $option['name']; ?> <?php echo $option['value']; ?></small><br />
+			  <?php } ?>
+			</div>
+			  <span class="quantity">x&nbsp;<?php echo $product['quantity']; ?></span>
+			  <span class="total"><?php echo $product['total']; ?></span>
+			  <div class="remove"><span onclick="(getURLVar('route') == 'checkout/cart' || getURLVar('route') == 'checkout/checkout') ? location = 'index.php?route=checkout/cart&remove=<?php echo $product['key']; ?>' : $('#cart').load('index.php?route=module/cart&remove=<?php echo $product['key']; ?>' + ' #cart > *');"  ><i class="fa fa-times-circle"></i><?php echo $button_remove; ?></span></div>
+			  </td>
+		  <!--td class="quantity">x&nbsp;<?php //echo $product['quantity']; ?></td-->
+		  <!--td class="total"><?php //echo $product['total']; ?></td-->
 		  
-		  <td class="text-right"></td>
-		  <td class="text-center"><button type="button" onclick="cart.remove('<?php echo $product['key']; ?>');" title="<?php echo $button_remove; ?>" class="btn btn-danger btn-xs"><i class="fa fa-times"></i></button></td>
 		</tr>
 		<?php } ?>
 		<?php foreach ($vouchers as $voucher) { ?>
 		<tr>
-		  <td class="text-center"></td>
-		  <td class="text-left"><?php echo $voucher['description']; ?></td>
-		  <td class="text-right">x&nbsp;1</td>
-		  <td class="text-right"><?php echo $voucher['amount']; ?></td>
-		  <td class="text-center text-danger"><button type="button" onclick="voucher.remove('<?php echo $voucher['key']; ?>');" title="<?php echo $button_remove; ?>" class="btn btn-danger btn-xs"><i class="fa fa-times"></i></button></td>
+		  <td class="image"></td>
+		  <td class="name"><?php echo $voucher['description']; ?>
+			<div class="remove"><span alt="<?php echo $button_remove; ?>" title="<?php echo $button_remove; ?>" onclick="(getURLVar('route') == 'checkout/cart' || getURLVar('route') == 'checkout/checkout') ? location = 'index.php?route=checkout/cart&remove=<?php echo $voucher['key']; ?>' : $('#cart').load('index.php?route=module/cart&remove=<?php echo $voucher['key']; ?>' + ' #cart > *');"><i class="fa fa-times-circle" ></i><?php echo $button_remove; ?></span></div>
+			</td>
+		  <!--<td class="quantity">x&nbsp;1</td>-->
+		  <!--<td class="total"><?php echo $voucher['amount']; ?></td>-->
+		  
 		</tr>
 		<?php } ?>
 	  </table>
-		</div>
-	</li>
-	<li>
-	  <div>
-		<table class="table total">
-		  <?php foreach ($totals as $total) { ?>
-		  <tr>
-			<td class="text-right"><strong><?php echo $total['title']; ?></strong></td>
-			<td class="text-right"><?php echo $total['text']; ?></td>
-		  </tr>
-		  <?php } ?>
-		</table>
-		<p class="text-right">
-			<a class="btn btn-primary" href="<?php echo $cart; ?>"><!--<i class="fa fa-shopping-cart"></i>--> <?php echo $text_cart; ?></a>
-			<a class="btn btn-primary" href="<?php echo $checkout; ?>"><!--<i class="fa fa-share"></i>--> <?php echo $text_checkout; ?></a></p>
-	  </div>
-	</li>
+	</div>
+	<div>
+	  <table class="total">
+		<?php foreach ($totals as $total) { ?>
+		<tr>
+		  <td class="text-right total-right"><b><?php echo $total['title']; ?>:</b></td>
+		  <td class="text-left total-left"><span class="t-price"><?php echo $total['text']; ?></span></td>
+		</tr>
+		<?php } ?>
+	  </table>
+	</div>
+	<div class="checkout">
+			<a class="button" href="/index.php?route=checkout/cart"><span><?php echo $text_cart; ?></span></a> 
+			<a class="button" href="<?php echo $checkout; ?>"><span><?php echo $text_checkout; ?></span></a>
+	</div>
 	<?php } else { ?>
-	<li>
-	  <p class="text-center"><?php echo $text_empty; ?></p>
-	</li>
+	<div class="empty"><?php echo $text_empty; ?></div>
 	<?php } ?>
-  </ul>
-</div>
+  </div>
+  </div>
 </div>
