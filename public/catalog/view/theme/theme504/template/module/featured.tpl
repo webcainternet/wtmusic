@@ -1,5 +1,4 @@
 <div class="box featured">
-	<div class="box-heading"><h3><?php echo $heading_title; ?></h3></div>
 	<div class="box-content">
 		<div class="row">
 		<?php $f=0; foreach ($products as $product) { $f++ ?>
