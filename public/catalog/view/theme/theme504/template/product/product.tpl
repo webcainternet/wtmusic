@@ -144,8 +144,6 @@
 					<!-- Product options -->
 					<div class="product-options form-horizontal">
 						<?php if ($options) { ?>
-							<h3><?php echo $text_option; ?></h3>
-
 							<?php
 							//PRODUTO ESPECIFICO
 							if ($product_id == 52 || $product_id == 58 || $product_id == 59 || $product_id == 60 || $product_id == 61 || $product_id == 68 || $product_id == 69 ) { ?>
@@ -153,6 +151,8 @@
 							<p>Para comprar um ingresso, preencha abaixo e clique em "Adicionar ao carrinho". Caso queira comprar mais de um ingressos, repita a operação.</p>
 							<p>Clique em "Finalizar pedido" para acessar o carrinho e concluir a sua compra.</p>
 
+							<?php } else { ?>
+							<h3><?php echo $text_option; ?></h3>
 							<?php } ?>
 
 							<?php foreach ($options as $option) { ?>
