@@ -101,6 +101,8 @@ else { ?>
 				<div class="input-group btn-block" style="max-width: 200px;">
 					
 					<?php
+var_dump($product); exit;
+
 							//PRODUTO ESPECIFICO
 							if ($product_id == 52 || $product_id == 58 || $product_id == 59 || $product_id == 60 || $product_id == 61 || $product_id == 68 || $product_id == 69 ) { echo "<!-- . -->"; } else { ?>
 
