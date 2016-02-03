@@ -1,4 +1,11 @@
 <?php echo $header; ?>
+
+<style type="text/css">
+footer {
+    margin-top: 0px;
+}
+</style>
+
 <div class="container">
 	<ul class="breadcrumb">
 		<?php foreach ($breadcrumbs as $breadcrumb) { ?>
