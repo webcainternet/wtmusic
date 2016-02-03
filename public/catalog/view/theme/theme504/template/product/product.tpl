@@ -148,8 +148,10 @@
 							//PRODUTO ESPECIFICO
 							if ($product_id == 52 || $product_id == 58 || $product_id == 59 || $product_id == 60 || $product_id == 61 || $product_id == 68 || $product_id == 69 ) { ?>
 
-							<p>Para comprar um ingresso, preencha abaixo e clique em "Adicionar ao carrinho". Caso queira comprar mais de um ingressos, repita a operação.</p>
-							<p>Clique em "Finalizar pedido" para acessar o carrinho e concluir a sua compra.</p>
+							<div style="background-color: #f3f3f3; padding: 10px;">
+								<p>Para comprar um ingresso, preencha abaixo e clique em <span style="color: #19405b; text-transform: uppercase;">"Adicionar ingresso ao carrinho"</span>. Caso queira comprar mais de um ingressos, repita a operação.</p>
+								<p>Clique em <span style="color: #228646; text-transform: uppercase;">"Finalizar pedido"</span> para acessar o carrinho e concluir a sua compra.</p>
+							</div>
 
 							<?php } else { ?>
 							<h3><?php echo $text_option; ?></h3>
@@ -319,7 +321,7 @@
 							<input type="hidden" name="product_id" value="<?php echo $product_id; ?>" />
 							<button type="button" id="button-cart" data-loading-text="<?php echo $text_loading; ?>" class="btn btn-add">Adicionar ingresso ao carrinho</button>
 
-							<a href="/index.php?route=checkout/cart"><button style="margin-top:10px; width: 100%;" type="button" id="button-cart2" data-loading-text="<?php echo $text_loading; ?>" class="btn btn-add">Finalizar pedido</button></a>
+							<a href="/index.php?route=checkout/cart"><button style="margin-top:10px; width: 100%;" type="button" id="button-cart2" data-loading-text="<?php echo $text_loading; ?>" class="btn btn-add" style="background-color: #228646;">Finalizar pedido</button></a>
 						</div>
 					<? } else { ?>
 
