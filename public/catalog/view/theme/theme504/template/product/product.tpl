@@ -293,7 +293,10 @@
 						<?php } ?>
 					</div>
 
-					<?php if ($product_id == 52 || $product_id == 58 || $product_id == 59 || $product_id == 60 || $product_id == 61 ) { ?>
+
+					<?php
+						//PRODUTO ESPECIFICO
+						if ($product_id == 52 || $product_id == 58 || $product_id == 59 || $product_id == 60 || $product_id == 61 || $product_id == 68 || $product_id == 69 ) { ?>
 						<div class="form-group form-horizontal">
 							<div class="form-group">
 								<div style="display:none;">
