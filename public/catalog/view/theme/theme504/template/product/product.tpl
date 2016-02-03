@@ -154,7 +154,7 @@
 							<p>Clique em "Finalizar pedido" para acessar o carrinho e concluir a sua compra.</p>
 
 							<?php } ?>
-							
+
 							<?php foreach ($options as $option) { ?>
 								<?php if ($option['type'] == 'select') { ?>
 									<div class="form-group<?php echo ($option['required'] ? ' required' : ''); ?>">
@@ -317,7 +317,7 @@
 							</div>
 							
 							<input type="hidden" name="product_id" value="<?php echo $product_id; ?>" />
-							<button type="button" id="button-cart" data-loading-text="<?php echo $text_loading; ?>" class="btn btn-add">Adicionar ao carrinho</button>
+							<button type="button" id="button-cart" data-loading-text="<?php echo $text_loading; ?>" class="btn btn-add">Adicionar ingresso ao carrinho</button>
 
 							<a href="/index.php?route=checkout/cart"><button style="margin-top:10px; width: 100%;" type="button" id="button-cart2" data-loading-text="<?php echo $text_loading; ?>" class="btn btn-add">Finalizar pedido</button></a>
 						</div>
