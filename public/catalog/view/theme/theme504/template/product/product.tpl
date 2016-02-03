@@ -153,7 +153,7 @@ footer {
 						<?php if ($options) { ?>
 							<?php
 							//PRODUTO ESPECIFICO
-							if ($product_id == 52 || $product_id == 58 || $product_id == 59 || $product_id == 60 || $product_id == 61 || $product_id == 68 || $product_id == 69 ) { ?>
+							if ($product_id == 52 || $product_id == 58 || $product_id == 59 || $product_id == 60 || $product_id == 61 || $product_id == 70 || $product_id == 69 ) { ?>
 
 							<div style="background-color: #f3f3f3; padding: 10px 10px 5px 10px; margin-bottom: 20px; font-size: 12px;">
 								<p>Para comprar um ingresso, preencha abaixo e clique em <span style="color: #19405b; text-transform: uppercase;">Adicionar ingresso ao carrinho</span>. Caso queira comprar mais de um ingressos, repita a operação.</p>
@@ -315,7 +315,7 @@ footer {
 
 					<?php
 						//PRODUTO ESPECIFICO
-						if ($product_id == 52 || $product_id == 58 || $product_id == 59 || $product_id == 60 || $product_id == 61 || $product_id == 68 || $product_id == 69 ) { ?>
+						if ($product_id == 52 || $product_id == 58 || $product_id == 59 || $product_id == 60 || $product_id == 61 || $product_id == 70 || $product_id == 69 ) { ?>
 
 
 						<!-- CARRINHO -->

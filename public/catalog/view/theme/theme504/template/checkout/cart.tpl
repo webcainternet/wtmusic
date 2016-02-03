@@ -102,7 +102,7 @@ else { ?>
 					
 					<?php
 							//PRODUTO ESPECIFICO
-							if ($product_id == 52 || $product_id == 58 || $product_id == 59 || $product_id == 60 || $product_id == 61 || $product_id == 68 || $product_id == 69 ) { ?>
+							if ($product_id == 52 || $product_id == 58 || $product_id == 59 || $product_id == 60 || $product_id == 61 || $product_id == 70 || $product_id == 69 ) { ?>
 
 					<p class="clearfix"><input type="text" name="quantity[<?php echo $product['key']; ?>]" value="<?php echo $product['quantity']; ?>" size="1" class="form-control cart-q" id="cart-q" /></p>
 
@@ -111,7 +111,7 @@ else { ?>
 
 					<?php
 							//PRODUTO ESPECIFICO
-							if ($product_id == 52 || $product_id == 58 || $product_id == 59 || $product_id == 60 || $product_id == 61 || $product_id == 68 || $product_id == 69 ) { ?>
+							if ($product_id == 52 || $product_id == 58 || $product_id == 59 || $product_id == 60 || $product_id == 61 || $product_id == 70 || $product_id == 69 ) { ?>
 
 						<button type="submit" data-toggle="tooltip" title="<?php echo $button_update; ?>" class="btn btn-primary"><i class="fa fa-refresh"></i></button>
 						<?php } ?>
