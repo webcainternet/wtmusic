@@ -188,7 +188,9 @@
 
 
 			<div style="float: right; position: relative; right: 0px; width: 790px;">
-				<?php echo $cart; ?>
+				<a href="/index.php?route=checkout/cart">
+					<?php echo $cart; ?>
+				</a>
 			</div>
 
 		</div>
