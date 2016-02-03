@@ -680,7 +680,13 @@ function getChar(event) {
 					<!--$('html, body').animate({ scrollTop: 0 }, 'slow');-->
 					
 					$('#cart').load('index.php?route=common/cart/info #cart');
-					setTimeout(function() {$('.alert').fadeOut(1000)},3000)
+					setTimeout(function() {$('.alert').fadeOut(2000)},3000);
+
+					$('input[name^=option][type=text]').val('');
+					$('input[name^=option][type=radio]').prop("checked", false).end().buttonset("refresh");
+					$('select[name^=option]').each(function() { this.selectedIndex = 0; });
+					$('input[name^=option][type=checkbox]').prop("checked", false).end().buttonset("refresh");
+					$('textarea[name^=option]').val('');
 				}
 			}
 		});
