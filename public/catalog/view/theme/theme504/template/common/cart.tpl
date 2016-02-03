@@ -1,4 +1,4 @@
-<div id="cart"  style="float: right;">
+<div id="cart"  style="float: right; background-color: #f3f3f3; padding: 15px;">
 
   <div class="heading">
 	<span class="link_a"> 
