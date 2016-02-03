@@ -680,7 +680,7 @@ function getChar(event) {
 					<!--$('html, body').animate({ scrollTop: 0 }, 'slow');-->
 					
 					$('#cart').load('index.php?route=common/cart/info #cart');
-					setTimeout(function() {$('.alert').fadeOut(2000)},3000);
+					setTimeout(function() {$('.alert').fadeOut(3000)},3000);
 
 					$('input[name^=option][type=text]').val('');
 				}
