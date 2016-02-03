@@ -13,7 +13,7 @@ $_['entry_firstname']   = 'Nome:';
 $_['entry_lastname']    = 'Sobrenome:';
 $_['entry_email']       = 'E-mail:';
 $_['entry_telephone']   = 'Telefone:';
-$_['entry_fax']         = 'Fax:';
+$_['entry_CPF']         = 'CPF:';
 
 // Error
 $_['error_exists']      = 'Atenção: Este e-mail já está cadastrado!';

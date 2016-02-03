@@ -9,7 +9,7 @@ $_['text_contact']   = 'Formulário de Contato';
 $_['text_address']   = 'Endereço:';
 $_['text_email']     = 'E-mail:';
 $_['text_telephone'] = 'Telefone:';
-$_['text_fax']       = 'Fax:';
+$_['text_CPF']       = 'CPF:';
 $_['text_comment']   = 'Comentários';
 $_['text_success']   = '<p>Sua mensagem foi enviada com sucesso! Entraremos em contato.</p>';
 
