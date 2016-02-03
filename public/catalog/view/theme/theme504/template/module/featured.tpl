@@ -1,3 +1,8 @@
+<style type="text/css">
+.col-lg-3 {
+    width: 24%;
+}
+</style>
 <div class="box featured">
 	<div class="box-content">
 		<div class="row">
