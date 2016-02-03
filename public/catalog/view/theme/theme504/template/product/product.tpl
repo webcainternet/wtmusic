@@ -307,7 +307,7 @@
 							</div>
 							
 							<input type="hidden" name="product_id" value="<?php echo $product_id; ?>" />
-							<button type="button" id="button-cart" data-loading-text="<?php echo $text_loading; ?>" class="btn btn-add">Adicionar pessoa</button>
+							<button type="button" id="button-cart" data-loading-text="<?php echo $text_loading; ?>" class="btn btn-add">Adicionar ao carrinho</button>
 
 							<a href="/index.php?route=checkout/cart"><button style="margin-top:10px; width: 100%;" type="button" id="button-cart2" data-loading-text="<?php echo $text_loading; ?>" class="btn btn-add">Finalizar pedido</button></a>
 						</div>
