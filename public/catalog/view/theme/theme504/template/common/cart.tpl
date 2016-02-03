@@ -3,7 +3,7 @@
   <div class="heading">
 	<span class="link_a"> 
 		<i class="fa fa-shopping-cart"></i>
-		<b>Carrinho</b>
+		<b>Carrinho: </b>
 		<span class="sc-button"></span>
 		<span id="cart-total"><?php echo $text_items; ?></span>
 		<i class="fa fa-caret-down"></i>
