@@ -47,10 +47,6 @@ class PagSeguroConnectionData
     /**
      * @var
      */
-    private $paymentUrl;
-    /**
-     * @var
-     */
     private $servicePath;
     /**
      * @var
@@ -73,7 +69,6 @@ class PagSeguroConnectionData
 
         $this->setEnvironment(PagSeguroConfig::getEnvironment());
         $this->setWebserviceUrl(PagSeguroResources::getWebserviceUrl($this->getEnvironment()));
-        $this->setPaymentUrl(PagSeguroResources::getPaymentUrl($this->getEnvironment()));
         $this->setCharset(PagSeguroConfig::getApplicationCharset());
 
         $this->resources = PagSeguroResources::getData($this->serviceName);
@@ -140,22 +135,6 @@ class PagSeguroConnectionData
     public function setWebserviceUrl($webserviceUrl)
     {
         $this->webserviceUrl = $webserviceUrl;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getPaymentUrl()
-    {
-        return $this->paymentUrl;
-    }
-
-    /**
-     * @param $environment
-     */
-    public function setPaymentUrl($paymentUrl)
-    {
-        $this->paymentUrl = $paymentUrl;
     }
 
     /**

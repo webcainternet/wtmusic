@@ -25,8 +25,8 @@ class PagSeguroXmlParser
 
     public function __construct($xml)
     {
-		$xml = mb_convert_encoding($xml, "UTF-8", "UTF-8,ISO-8859-1");
-        $parser = xml_parser_create();
+        //$parser = xml_parser_create();
+		$parser = xml_parser_create('ISO-8859-1'); // única modificação feita na API para adaptação com o OpenCart
         if (!xml_parse($parser, $xml)) {
             throw new Exception(
                 "PagSeguroLibrary XML parsing error: (" . xml_get_error_code($parser) .

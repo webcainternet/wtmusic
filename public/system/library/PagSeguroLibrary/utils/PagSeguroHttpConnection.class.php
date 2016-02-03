@@ -56,15 +56,15 @@ class PagSeguroHttpConnection
 
     public function post($url, array $data, $timeout = 20, $charset = 'ISO-8859-1')
     {
-        return $this->curlConnection('POST', $url, $timeout, $charset, $data);
+        return $this->curlConnection('POST', $url, $data, $timeout, $charset);
     }
 
     public function get($url, $timeout = 20, $charset = 'ISO-8859-1')
     {
-        return $this->curlConnection('GET', $url, $timeout, $charset, null);
+        return $this->curlConnection('GET', $url, null, $timeout, $charset);
     }
 
-    private function curlConnection($method, $url, $timeout, $charset, array $data = null)
+    private function curlConnection($method, $url, array $data, $timeout, $charset)
     {
 
         if (strtoupper($method) === 'POST') {
@@ -81,13 +81,11 @@ class PagSeguroHttpConnection
             );
         }
 
-
         $options = array(
             CURLOPT_HTTPHEADER => array(
                 "Content-Type: application/x-www-form-urlencoded; charset=" . $charset,
                 $contentLength,
-                'lib-description: php:' . PagSeguroLibrary::getVersion(),
-                'language-engine-description: php:' . PagSeguroLibrary::getPHPVersion()
+                'lib-description: php:' . PagSeguroLibrary::getVersion()
             ),
             CURLOPT_URL => $url,
             CURLOPT_RETURNTRANSFER => true,
@@ -97,14 +95,16 @@ class PagSeguroHttpConnection
             //CURLOPT_TIMEOUT => $timeout
             );
 
+        // adding module version
         if (!is_null(PagSeguroLibrary::getModuleVersion())) {
             array_push($options[CURLOPT_HTTPHEADER], 'module-description: ' . PagSeguroLibrary::getModuleVersion());
         }
 
+        // adding CMS version
         if (!is_null(PagSeguroLibrary::getCMSVersion())) {
             array_push($options[CURLOPT_HTTPHEADER], 'cms-description: ' . PagSeguroLibrary::getCMSVersion());
         }
-        
+
         $options = ($options + $methodOptions);
 
         $curl = curl_init();

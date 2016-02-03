@@ -89,23 +89,21 @@ class PagSeguroPhone
     /**
      * Sets the number from a formatted string
      *
-     * @param $number String formatted string like <code>(099) [9]9999-9999</code>
+     * @param $number String formatted string like <code>(99) [9]9999-9999</code>
      * @return $this
      */
     public function setFullPhone($number)
     {
         /* We clean the string that is coming. Can be formatted or not */
-
-        $number = preg_replace("/[^0-9]/", '', $number);
-        $number = $number[0] == 0 ? substr($number, 1) : $number;
-
-        $number = str_split($number, 1);
-        $areaCode = array_shift($number) . array_shift($number);
+        $number = str_replace(array('(', ')', '-', ' '), '', $number);
+        $number = explode('', $number);
+        $areaCode = array_shift($number[0]) . array_shift($number[1]);
         $phone = implode('', $number);
 
         $this->setAreaCode($areaCode);
         $this->setNumber($phone);
 
-        return $this->areaCode . $this->number;
+        return $this;
+
     }
 }

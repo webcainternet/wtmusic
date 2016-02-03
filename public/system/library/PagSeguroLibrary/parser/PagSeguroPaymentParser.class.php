@@ -120,7 +120,7 @@ class PagSeguroPaymentParser extends PagSeguroServiceParser
             }
 
             if ($payment->getShipping()->getCost() != null && $payment->getShipping()->getCost() != null) {
-                $data['shippingCost'] = PagSeguroHelper::decimalFormat($payment->getShipping()->getCost());
+                $data['shippingCost'] = $payment->getShipping()->getCost();
             }
 
             // address

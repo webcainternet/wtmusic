@@ -20,7 +20,7 @@
 
 /**
  * Defines a list of known transaction statuses.
- * This class is not an enum to enable the introduction of new transaction status.
+ * This class is not an enum to enable the introduction of new shipping types
  * without breaking this version of the library.
  */
 class PagSeguroTransactionStatus

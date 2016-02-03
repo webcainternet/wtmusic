@@ -105,7 +105,7 @@ class ControllerPaymentPagseguro extends Controller {
 			
 		$data['cancel'] = $this->url->link('extension/payment', 'token=' . $this->session->data['token'], 'SSL');
 		
-		if (isset($this->request->post['pagseguro_token'])) {
+		if (isset($this->request->post['_token'])) {
 		  $data['pagseguro_token'] = $this->request->post['pagseguro_token'];
 		} else {
 		  $data['pagseguro_token'] = $this->config->get('pagseguro_token');

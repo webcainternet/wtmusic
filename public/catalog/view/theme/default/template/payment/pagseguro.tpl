@@ -5,7 +5,7 @@
 </div>
 <script type="text/javascript"><!--
 $('#button-confirm').on('click', function() {
-	$.ajax({ 
+	$.ajax({
 		type: 'get',
 		url: 'index.php?route=payment/pagseguro/confirm',
 		cache: false,
@@ -14,17 +14,13 @@ $('#button-confirm').on('click', function() {
 		},
 		complete: function() {
 			$('#button-confirm').button('reset');
-		},		
+		},
 		success: function() {
-			<?php if($url){ ?>
 			location = '<?php echo $url; ?>';
-			<?php } else { ?>
-			alert('Erro de acesso no PagSeguro. Para mais detalhes, verifique o log de erros do OpenCart.');
-			<?php } ?>
 		},
 		error: function(xhr, ajaxOptions, thrownError) {
 			alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
 		}
 	});
 });
-//--></script> 
+//--></script>
