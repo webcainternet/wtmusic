@@ -309,6 +309,16 @@
 					<?php
 						//PRODUTO ESPECIFICO
 						if ($product_id == 52 || $product_id == 58 || $product_id == 59 || $product_id == 60 || $product_id == 61 || $product_id == 68 || $product_id == 69 ) { ?>
+
+
+
+						<div style="float: right; position: relative; right: 0px; width: 790px;">
+							<a href="/index.php?route=checkout/cart">
+								<?php echo $cart; ?>
+							</a>
+						</div>
+
+						
 						<div class="form-group form-horizontal">
 							<div class="form-group">
 								<div style="display:none;">
