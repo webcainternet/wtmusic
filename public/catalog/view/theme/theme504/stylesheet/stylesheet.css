@@ -2963,3 +2963,7 @@ label{
 .featured .product-layout {
 	min-height: 450px;
 }
+.esgotado {
+	color: red !important;
+    font-weight: 600 !important;
+}
