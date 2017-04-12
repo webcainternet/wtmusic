@@ -145,6 +145,33 @@
 
 
 <header>
+	<div class="top-header-1">
+        <div class="pull-left" style="font-size: 14px;">
+            <a href="https://www.facebook.com/WTMusic-1410060492633924" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+        </div>
+
+        <div class="pull-left" style="margin-left: 5px;font-size: 14px;">
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        </div>
+
+        <div class="pull-left" style="margin-left: 5px;font-size: 14px;">
+            <a href="https://br.pinterest.com/" target="_blank"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+        </div>
+
+
+        
+        <div class="pull-left" style="margin-left: 25px;">
+            <a href="#">PARCELAMENTO SEM JUROS NO CARTÃO DE CRÉDITO</a>
+        </div>
+        <div class="pull-right" style="margin-left: 25px;">
+            <i class="fa fa-phone"></i> TELEVENDAS: <b><?php echo $telephone; ?></b>
+        </div>
+        <div class="pull-right">
+            <i class="fa fa-comments"></i> CHAT ONLINE
+        </div>
+    </div>
+
+
 	<div class="container" style="width: 1270px;"> 
 		<div id="logo">
 			<?php if ($logo) { ?>
@@ -180,11 +207,11 @@
 		</nav>
 		<div class="box-right">
 			<?php echo $search; ?>
-			<ul class="soc-icon">
+			<?php /* <ul class="soc-icon">
 				<li><a href="https://www.facebook.com/WTMusic-1410060492633924/" target="_blank"><i class="fa fa-facebook"></i></a></li>
-				<?php /* <li><a href="//www.twitter.com/"><i class="fa fa-twitter"></i></a></li>
-				<li><a href="//www.pinterest.com/"><i class="fa fa-pinterest"></i></a></li> */ ?>
-			</ul>
+				<li><a href="//www.twitter.com/"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="//www.pinterest.com/"><i class="fa fa-pinterest"></i></a></li>
+			</ul> */ ?>
 
 
 			<div style="float: right; position: relative; right: 0px; width: 790px; margin-right: -15px;" id="divcarrinho">

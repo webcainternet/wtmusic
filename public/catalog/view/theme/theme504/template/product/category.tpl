@@ -72,7 +72,7 @@
 				<div class="col-md-2">
 					<label class="control-label" for="input-sort"><?php echo $text_sort; ?></label>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-4">
 					<select id="input-sort" class="form-control col-sm-3" onchange="location = this.value;">
 						<?php foreach ($sorts as $sorts) { ?>
 						<?php if ($sorts['value'] == $sort . '-' . $order) { ?>
@@ -86,7 +86,7 @@
 				<div class="col-md-2">
 					<label class="control-label" for="input-limit"><?php echo $text_limit; ?></label>
 				</div>
-				<div class="col-md-2">
+				<div class="col-md-4 text-left">
 					<select id="input-limit" class="form-control" onchange="location = this.value;">
 						<?php foreach ($limits as $limits) { ?>
 						<?php if ($limits['value'] == $limit) { ?>
@@ -97,7 +97,7 @@
 						<?php } ?>
 					</select>
 				</div>
-				<div class="col-md-3 text-right">
+				<div style="display: none;">
 					<div class="button-view">
 						<button type="button" id="list-view" class="btn btn-default" data-toggle="tooltip" title="<?php echo $button_list; ?>"><i class="fa fa-th-list"></i></button>
 						<button type="button" id="grid-view" class="btn btn-default" data-toggle="tooltip" title="<?php echo $button_grid; ?>"><i class="fa fa-th"></i></button>
@@ -171,4 +171,7 @@
 	  <?php echo $content_bottom; ?></div>
 	<?php echo $column_right; ?></div>
 </div>
+<script type="text/javascript">
+$(document).ready(function() { if(typeof display == 'function') { display('grid'); } });
+</script>
 <?php echo $footer; ?>

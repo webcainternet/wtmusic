@@ -392,6 +392,19 @@ header #cart .cart td.total {
 	color:#c81908;
 	text-align: right;
 }
+header .top-header-1 {
+	padding: 6px 15px 8px 15px;
+    border-bottom: dashed 2px #f3f3f3;
+    min-width: 100%;
+    display: inline-block;
+    color: #333;
+}
+header .top-header-1 a {
+	color: #333;
+}
+header .top-header-1 a:hover {
+	color: #d42a2a;
+}
 .cart-module .remove img:hover {
 	overflow:hidden;
 	margin-top:-11px;
@@ -2935,4 +2948,18 @@ label{
     overflow: hidden;
     margin: 0 auto;
     background-color: #fff;
+}
+
+#compare-total {
+	display: none !important;
+}
+.button-view {
+/*	display: none !important;*/
+}
+
+.featured .product-layoutREMOVE {
+	min-height: 450px;
+}
+.featured .product-layout {
+	min-height: 450px;
 }
