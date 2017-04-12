@@ -7,7 +7,7 @@
 			navigationHover: true,
 			barPosition: 'top',
 			loader: false,
-			time: 3000,
+			time: 9000,
 			transPeriod:800,
 			alignment: 'center',
 			autoAdvance: true,
