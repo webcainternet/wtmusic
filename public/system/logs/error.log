@@ -4342,3 +4342,37 @@
 2017-03-20 23:05:05 - PHP Notice:  Trying to get property of non-object in /var/www/html/wtmusic/public/catalog/controller/common/seo_url.php on line 111
 2017-03-20 23:05:05 - PHP Notice:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'A=0'' at line 1<br />Error No: 1064<br />SELECT * FROM oc_url_alias WHERE `query` = 'product/product'A=0' in /var/www/html/wtmusic/public/system/library/db/mysqli.php on line 40
 2017-03-20 23:05:05 - PHP Notice:  Trying to get property of non-object in /var/www/html/wtmusic/public/catalog/controller/common/seo_url.php on line 111
+2017-04-14 7:43:50 - PHP Notice:  Undefined index: name in /var/www/html/wtmusic/public/catalog/controller/information/contact.php on line 204
+2017-04-14 7:43:50 - PHP Notice:  Undefined index: email in /var/www/html/wtmusic/public/catalog/controller/information/contact.php on line 208
+2017-04-14 7:43:50 - PHP Notice:  Undefined index: enquiry in /var/www/html/wtmusic/public/catalog/controller/information/contact.php on line 212
+2017-04-25 12:10:21 - PHP Notice:  Undefined index: name in /var/www/html/wtmusic/public/catalog/controller/information/contact.php on line 204
+2017-04-25 12:10:21 - PHP Notice:  Undefined index: email in /var/www/html/wtmusic/public/catalog/controller/information/contact.php on line 208
+2017-04-25 12:10:21 - PHP Notice:  Undefined index: enquiry in /var/www/html/wtmusic/public/catalog/controller/information/contact.php on line 212
+2017-05-06 8:09:20 - PHP Notice:  Undefined index: name in /var/www/html/wtmusic/public/catalog/controller/information/contact.php on line 204
+2017-05-06 8:09:20 - PHP Notice:  Undefined index: email in /var/www/html/wtmusic/public/catalog/controller/information/contact.php on line 208
+2017-05-06 8:09:20 - PHP Notice:  Undefined index: enquiry in /var/www/html/wtmusic/public/catalog/controller/information/contact.php on line 212
+2017-05-27 5:13:03 - PHP Notice:  Undefined index: name in /var/www/html/wtmusic/public/catalog/controller/information/contact.php on line 204
+2017-05-27 5:13:03 - PHP Notice:  Undefined index: enquiry in /var/www/html/wtmusic/public/catalog/controller/information/contact.php on line 212
+2017-06-04 6:58:59 - PHP Warning:  session_start(): open(/var/lib/php5/sessions/sess_g21sh9u9v5ccm57ife0l11ep83, O_RDWR) failed: No space left on device (28) in /var/www/html/wtmusic/public/system/library/session.php on line 12
+2017-06-04 7:46:33 - PHP Warning:  session_start(): open(/var/lib/php5/sessions/sess_rh0ek4is5un34rv2omp1d6ucb5, O_RDWR) failed: No space left on device (28) in /var/www/html/wtmusic/public/system/library/session.php on line 12
+2017-06-04 8:28:48 - PHP Warning:  session_start(): open(/var/lib/php5/sessions/sess_8vcdckk8bos8ns7fg0cnm4k3q4, O_RDWR) failed: No space left on device (28) in /var/www/html/wtmusic/public/system/library/session.php on line 12
+2017-06-04 8:55:43 - PHP Warning:  fread(): Length parameter must be greater than 0 in /var/www/html/wtmusic/public/system/library/cache/file.php on line 32
+2017-06-04 8:55:43 - PHP Warning:  fread(): Length parameter must be greater than 0 in /var/www/html/wtmusic/public/system/library/cache/file.php on line 32
+2017-06-04 9:09:00 - PHP Warning:  fread(): Length parameter must be greater than 0 in /var/www/html/wtmusic/public/system/library/cache/file.php on line 32
+2017-06-04 9:09:00 - PHP Warning:  fread(): Length parameter must be greater than 0 in /var/www/html/wtmusic/public/system/library/cache/file.php on line 32
+2017-06-04 9:24:50 - PHP Warning:  fread(): Length parameter must be greater than 0 in /var/www/html/wtmusic/public/system/library/cache/file.php on line 32
+2017-06-04 9:24:50 - PHP Warning:  fread(): Length parameter must be greater than 0 in /var/www/html/wtmusic/public/system/library/cache/file.php on line 32
+2017-06-04 9:39:22 - PHP Warning:  fread(): Length parameter must be greater than 0 in /var/www/html/wtmusic/public/system/library/cache/file.php on line 32
+2017-06-04 9:39:22 - PHP Warning:  fread(): Length parameter must be greater than 0 in /var/www/html/wtmusic/public/system/library/cache/file.php on line 32
+2017-06-04 9:46:28 - PHP Warning:  fread(): Length parameter must be greater than 0 in /var/www/html/wtmusic/public/system/library/cache/file.php on line 32
+2017-06-04 9:46:28 - PHP Warning:  fread(): Length parameter must be greater than 0 in /var/www/html/wtmusic/public/system/library/cache/file.php on line 32
+2017-06-04 10:22:04 - PHP Warning:  fread(): Length parameter must be greater than 0 in /var/www/html/wtmusic/public/system/library/cache/file.php on line 32
+2017-06-04 10:22:04 - PHP Warning:  fread(): Length parameter must be greater than 0 in /var/www/html/wtmusic/public/system/library/cache/file.php on line 32
+2017-06-04 10:33:08 - PHP Warning:  fread(): Length parameter must be greater than 0 in /var/www/html/wtmusic/public/system/library/cache/file.php on line 32
+2017-06-04 10:33:08 - PHP Warning:  fread(): Length parameter must be greater than 0 in /var/www/html/wtmusic/public/system/library/cache/file.php on line 32
+2017-06-04 10:33:54 - PHP Warning:  fread(): Length parameter must be greater than 0 in /var/www/html/wtmusic/public/system/library/cache/file.php on line 32
+2017-06-04 10:33:54 - PHP Warning:  fread(): Length parameter must be greater than 0 in /var/www/html/wtmusic/public/system/library/cache/file.php on line 32
+2017-06-04 10:48:24 - PHP Warning:  fread(): Length parameter must be greater than 0 in /var/www/html/wtmusic/public/system/library/cache/file.php on line 32
+2017-06-04 10:48:24 - PHP Warning:  fread(): Length parameter must be greater than 0 in /var/www/html/wtmusic/public/system/library/cache/file.php on line 32
+2017-06-04 11:10:16 - PHP Warning:  fread(): Length parameter must be greater than 0 in /2017-06-04 11:56:51 - PHP Warning:  fread(): Length parameter must be greater than 0 in /var/www/html/wtmusic/public/system/library/cache/file.php on line 32
+2017-06-04 11:56:51 - PHP Warning:  fread(): Length parameter must be greater than 0 in /var/www/html/wtmusic/public/system/library/cache/file.php on line 32
